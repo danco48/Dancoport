@@ -3,93 +3,323 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Danco Designineer</title>
+  <title>Danco Designineer | Pro Portfolio</title>
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: Inter + space for fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <!-- Main CSS (separate file) -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="script.js">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="img"><img src="images/logo.png" alt=""></div>
-    <div class="logo">Danco</div>
-    
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    <div class="menu" id="menu">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+  <!-- ===== PRELOADER ===== (optional, adds pro touch) -->
+  <div class="preloader" id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <div class="logo-img">
+          <img src="images/logo.png" alt="Danco" onerror="this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2218%22%20fill%3D%22%23c084fc%22%2F%3E%3Ctext%20x%3D%229%22%20y%3D%2227%22%20fill%3D%22white%22%20font-size%3D%2218%22%3ED%3C%2Ftext%3E%3C%2Fsvg%3E'">
+        </div>
+        <div class="logo-text">Danco</div>
+      </div>
+      
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+      
+      <ul class="menu" id="menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- ===== HERO SECTION ===== -->
   <header id="home" class="hero">
-    <h1>Welcome, I'm <span class="highlight">Danco</span></h1>
-    <h3>Naturing young legends to profesionals.</h3>
-    <h2><span id="typing"></span></h2>
-    <a href="#contact" class="btn">Get In Touch</a>
+    <div class="hero-content">
+      <div class="hero-badge animate-float">✨ designineer / mentor</div>
+      <h1 class="hero-title reveal-text">Welcome, I'm <span class="gradient-text">Danco</span></h1>
+      <p class="hero-subtitle">Nurturing young legends to professionals.</p>
+      <div class="hero-typed">
+        <h2 class="typed-output"><span id="typing"></span><span class="typed-cursor">|</span></h2>
+      </div>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary"><span>Get In Touch</span><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#projects" class="btn btn-outline"><span>View Work</span><i class="fa-regular fa-eye"></i></a>
+      </div>
+      <div class="hero-social">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#about" class="scroll-down">
+        <span>Scroll</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
   </header>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I am a passionate Designineer who loves crafting beautiful designs, developing smart solutions, and engineering creative technologies.</p><br><br>
-    <p><b>For assistance</b> and <b>Learning materials</b>,join my WhatsApp group</p>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">Project 1
-        <div class="word"><p>Motion Detector app(using cv2)</p></div>
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">get to know me</span>
+        <h2 class="section-title">About <span class="gradient-text">Danco</span></h2>
+        <div class="section-divider"></div>
       </div>
-      <div class="project-card">Project 2
-        <div class="word"><p>Learning request and Pygame imports</p></div>
+      
+      <div class="about-grid">
+        <div class="about-card fade-left">
+          <div class="about-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>Designineer mindset</h3>
+          <p>I am a passionate Designineer who loves crafting beautiful designs, developing smart solutions, and engineering creative technologies.</p>
+        </div>
+        
+        <div class="about-card fade-up" data-delay="150">
+          <div class="about-icon"><i class="fa-solid fa-users"></i></div>
+          <h3>Community mentor</h3>
+          <p><b>For assistance</b> and <b>Learning materials</b>, join my WhatsApp group — let's grow together.</p>
+          <a href="https://chat.whatsapp.com/CPgXz6t86gFDunErv35890" class="chip-link" target="_blank"><i class="fa-brands fa-whatsapp"></i> Join group →</a>
+        </div>
+        
+        <div class="about-card fade-right" data-delay="300">
+          <div class="about-icon"><i class="fa-regular fa-face-smile"></i></div>
+          <h3>Beyond code</h3>
+          <p>I blend engineering, design and mentorship to shape the next generation of creators.</p>
+        </div>
       </div>
-      <div class="project-card">Project 3
-        <div class="word"><p>none</p></div>
-      </div>
- 
-
     </div>
   </section>
-<center>
-    <div class="project_card">
-    <div class="word"><p>Need to start your own project? Lets meet in the  <a href="https://chat.Whatsapp.com/CPgXz6t86gFDunErv35890">GROUP</a> </p></div>
-  </div>
-</center>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Web Development</li>
-      <li>Graphic Design</li>
-      <li>Software Engineering(only python)</li>
-      <li>Creative Solutions</li>
-    </ul>
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">my recent work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card fade-up">
+          <div class="card-media">
+            <div class="media-placeholder" style="background: linear-gradient(145deg, #1e1e2f, #2d2d5a)">
+              <i class="fa-solid fa-video"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Motion Detector</h3>
+            <p>Python app using OpenCV (cv2) for real‑time motion detection.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>OpenCV</span><span>NumPy</span>
+            </div>
+            <div class="card-links">
+              <a href="#" class="card-link"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#" class="card-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card fade-up" data-delay="100">
+          <div class="card-media">
+            <div class="media-placeholder" style="background: linear-gradient(145deg, #0f2b3d, #1b4f6e)">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Pygame Workshop</h3>
+            <p>Learning request library + Pygame fundamentals. Interactive learning kit.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>Pygame</span><span>requests</span>
+            </div>
+            <div class="card-links">
+              <a href="#" class="card-link"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 (coming soon) -->
+        <div class="project-card fade-up" data-delay="200">
+          <div class="card-media">
+            <div class="media-placeholder" style="background: linear-gradient(145deg, #2d1b3a, #5a2e7a)">
+              <i class="fa-regular fa-hourglass-half"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Mystery Project</h3>
+            <p>Something exciting is cooking — stay tuned ✨</p>
+            <div class="tech-tags">
+              <span>?</span><span>soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Callout card (WhatsApp group) -->
+      <div class="project-cta scale-in">
+        <div class="cta-card">
+          <div class="cta-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="cta-text">
+            <h4>Start your own project?</h4>
+            <p>Let's meet in the <a href="https://chat.whatsapp.com/CPgXz6t86gFDunErv35890" target="_blank">official WhatsApp group</a> — resources, help & community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:njorodancan48@gmail.com">njorodancan48@gmail.com</a></p>
-    <p>Social: <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">my expertise</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">tools</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      
+      <div class="skills-container">
+        <div class="skill-category fade-left">
+          <h3><i class="fa-solid fa-code"></i> Development</h3>
+          <ul class="skills-list">
+            <li>HTML5 / CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Python (advanced)</li>
+            <li>Flask / Django basics</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category fade-up">
+          <h3><i class="fa-solid fa-pen-nib"></i> Design</h3>
+          <ul class="skills-list">
+            <li>Graphic design</li>
+            <li>Figma / Adobe XD</li>
+            <li>UI/UX principles</li>
+            <li>Creative branding</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category fade-right">
+          <h3><i class="fa-solid fa-cubes"></i> Engineering</h3>
+          <ul class="skills-list">
+            <li>Software engineering (Python)</li>
+            <li>OpenCV / computer vision</li>
+            <li>Pygame / game experiments</li>
+            <li>Creative solutions</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- extra soft skills animation (floating badges) -->
+      <div class="soft-skills">
+        <span class="soft-badge">🧠 Problem solving</span>
+        <span class="soft-badge">🤝 Mentorship</span>
+        <span class="soft-badge">⚡ Fast learner</span>
+        <span class="soft-badge">🎯 Creative thinking</span>
+      </div>
+    </div>
   </section>
 
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">let's talk</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info fade-left">
+          <div class="contact-item">
+            <i class="fa-regular fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:njorodancan48@gmail.com">njorodancan48@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-instagram"></i>
+            <div>
+              <h4>Instagram</h4>
+              <a href="#">@danco.designineer</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="#">linkedin.com/in/danco</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form fade-right">
+          <form id="contactForm" action="#" method="post">
+            <div class="input-group">
+              <input type="text" id="name" name="name" required>
+              <label for="name">Your name</label>
+            </div>
+            <div class="input-group">
+              <input type="email" id="email" name="email" required>
+              <label for="email">Email address</label>
+            </div>
+            <div class="input-group">
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send message</span> <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p>© 2025 Danco. All rights reserved.</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Danco <span class="gradient-text">⸻</span></div>
+        <p class="footer-quote">Nurturing young legends to professionals.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://chat.whatsapp.com/CPgXz6t86gFDunErv35890" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="footer-copyright">
+          <p>© 2025 Danco Designineer. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://chat.Whatsapp.com/CPgXz6t86gFDunErv35890" class="whatsapp-float" target="_blank" title="Join My WhatsApp Channel">
-  
-  
-  <img src="images/2504957.png" alt=WhatsAppChannel width="50">
+  <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+  <a href="https://chat.whatsapp.com/CPgXz6t86gFDunErv35890" class="whatsapp-float" target="_blank" title="Join WhatsApp channel">
+    <i class="fa-brands fa-whatsapp"></i>
   </a>
 
+  <!-- ===== BACK TO TOP ===== -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fa-solid fa-chevron-up"></i>
+  </div>
+
+  <!-- separate JS file -->
   <script src="script.js"></script>
 </body>
 </html>
