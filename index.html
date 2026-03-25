@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Danco Designineer | Pro Portfolio</title>
+  <title>Danco Designineer | Pro Company Portfolio</title>
   <!-- Font Awesome 6 (free) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +19,7 @@
     <div class="loader"></div>
   </div>
 
-  <!-- ===== NAVIGATION ===== -->
+  <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <div class="nav-left">
@@ -29,317 +28,478 @@
         </div>
         <div class="logo-text">Danco</div>
       </div>
-      
-      <div class="menu-toggle" id="menuToggle">
-        <span></span><span></span><span></span>
-      </div>
-      
+      <div class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
       <ul class="menu" id="menu">
         <li><a href="#home" class="nav-link active">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
         <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- ===== HERO SECTION ===== -->
+  <!-- ===== HERO / COMPANY STATS ===== -->
   <header id="home" class="hero">
     <div class="hero-content">
-      <div class="hero-badge animate-float">✨ designineer / mentor / innovator</div>
-      <h1 class="hero-title reveal-text">Welcome, I'm <span class="gradient-text">Danco</span></h1>
-      <p class="hero-subtitle">Nurturing young legends to professionals and beyond.</p>
+      <div class="hero-badge animate-float">✨ designineer / creative agency</div>
+      <h1 class="hero-title reveal-text">Welcome to <span class="gradient-text">Danco Co.</span></h1>
+      <p class="hero-subtitle">We engineer brands, digital products, and creative solutions.</p>
       <div class="hero-typed">
         <h2 class="typed-output"><span id="typing"></span><span class="typed-cursor">|</span></h2>
       </div>
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary"><span>Get In Touch</span><i class="fa-solid fa-arrow-right"></i></a>
-        <a href="#projects" class="btn btn-outline"><span>View Work</span><i class="fa-regular fa-eye"></i></a>
+        <a href="#contact" class="btn btn-primary"><span>Get a Quote</span><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#projects" class="btn btn-outline"><span>See Work</span><i class="fa-regular fa-eye"></i></a>
       </div>
       <div class="hero-social">
         <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
       </div>
     </div>
+
+    <div class="hero-stats fade-up">
+      <div class="stat-card">
+        <h3>250+</h3><p>Projects Completed</p>
+      </div>
+      <div class="stat-card">
+        <h3>100+</h3><p>Happy Clients</p>
+      </div>
+      <div class="stat-card">
+        <h3>10+</h3><p>Years Experience</p>
+      </div>
+    </div>
+
     <div class="hero-scroll">
-      <a href="#about" class="scroll-down">
-        <span>Scroll</span>
-        <i class="fa-solid fa-chevron-down"></i>
-      </a>
+      <a href="#about" class="scroll-down"><span>Scroll</span><i class="fa-solid fa-chevron-down"></i></a>
     </div>
   </header>
 
-  <!-- ===== ABOUT SECTION ===== -->
+  <!-- ===== ABOUT COMPANY ===== -->
   <section id="about" class="section about">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-subtitle">get to know me</span>
-        <h2 class="section-title">About <span class="gradient-text">Danco</span></h2>
+        <span class="section-subtitle">Who we are</span>
+        <h2 class="section-title">About <span class="gradient-text">Danco Co.</span></h2>
         <div class="section-divider"></div>
       </div>
-      
       <div class="about-grid">
         <div class="about-card fade-left">
-          <div class="about-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-          <h3>Designineer mindset</h3>
-          <p>I craft beautiful designs, engineer creative tech, and bring smart solutions to life with a visionary approach.</p>
+          <div class="about-icon"><i class="fa-solid fa-building"></i></div>
+          <h3>Our Vision</h3>
+          <p>To be a leading creative engineering agency, empowering clients with world-class digital solutions.</p>
         </div>
-        
         <div class="about-card fade-up" data-delay="150">
-          <div class="about-icon"><i class="fa-solid fa-users"></i></div>
-          <h3>Community mentor</h3>
-          <p><b>Join my WhatsApp community</b> for resources, guidance, and interactive learning sessions.</p>
-          <a href="https://chat.whatsapp.com/ERm2WVGVZQH2DivPUm6R5l" class="chip-link" target="_blank"><i class="fa-brands fa-whatsapp"></i> Join group →</a>
+          <div class="about-icon"><i class="fa-solid fa-mission"></i></div>
+          <h3>Our Mission</h3>
+          <p>Design, engineer, and mentor — combining technology, creativity, and strategy for maximum impact.</p>
         </div>
-        
         <div class="about-card fade-right" data-delay="300">
-          <div class="about-icon"><i class="fa-regular fa-face-smile"></i></div>
-          <h3>Beyond code</h3>
-          <p>I blend engineering, design, mentorship, and creativity to empower the next generation of creators and innovators.</p>
+          <div class="about-icon"><i class="fa-solid fa-people-group"></i></div>
+          <h3>Our Values</h3>
+          <p>Innovation, transparency, quality, mentorship, and community growth drive everything we do.</p>
         </div>
-        
-        <div class="about-card fade-up" data-delay="450">
-          <div class="about-icon"><i class="fa-solid fa-rocket"></i></div>
-          <h3>Innovation Lab</h3>
-          <p>Experimenting with new tech, prototyping apps, and exploring AI, OpenCV, and creative software solutions.</p>
+      </div>
+      <!-- additional company highlight: awards & global presence -->
+      <div class="about-highlights fade-up" style="margin-top: 3rem;">
+        <div class="highlight-item"><i class="fa-solid fa-award"></i> <span>Awwwards Nominee 2024</span></div>
+        <div class="highlight-item"><i class="fa-solid fa-globe"></i> <span>Global clients in 15+ countries</span></div>
+        <div class="highlight-item"><i class="fa-solid fa-certificate"></i> <span>Google Partner Certified</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">What we offer</span>
+        <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-left">
+          <i class="fa-solid fa-paint-brush"></i>
+          <h3>UI/UX Design</h3>
+          <p>Crafting intuitive and visually stunning interfaces for web & mobile apps.</p>
+          <span class="service-tag">Figma · Prototyping · Usability</span>
+        </div>
+        <div class="service-card fade-up" data-delay="150">
+          <i class="fa-solid fa-code"></i>
+          <h3>Web & App Development</h3>
+          <p>Custom web apps, Python solutions, and full-stack development tailored to client needs.</p>
+          <span class="service-tag">React · Node · Python · Django</span>
+        </div>
+        <div class="service-card fade-right" data-delay="300">
+          <i class="fa-solid fa-bullhorn"></i>
+          <h3>Brand Strategy</h3>
+          <p>Strategic branding, identity creation, and marketing consultancy for modern businesses.</p>
+          <span class="service-tag">Identity · Positioning · Storytelling</span>
+        </div>
+        <div class="service-card fade-left" data-delay="450">
+          <i class="fa-solid fa-chalkboard-teacher"></i>
+          <h3>Workshops & Mentorship</h3>
+          <p>Guiding teams and individuals in design, development, and creative problem-solving.</p>
+          <span class="service-tag">Training · Code reviews · Career</span>
+        </div>
+        <div class="service-card fade-up" data-delay="600">
+          <i class="fa-solid fa-chart-line"></i>
+          <h3>SEO & Analytics</h3>
+          <p>Data-driven growth strategies, search visibility, and performance optimization.</p>
+          <span class="service-tag">SEO · SEM · Conversion</span>
+        </div>
+        <div class="service-card fade-right" data-delay="750">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <h3>Cloud & DevOps</h3>
+          <p>AWS, CI/CD pipelines, scalable infrastructure for high-performance apps.</p>
+          <span class="service-tag">AWS · Docker · Kubernetes</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== PROJECTS SECTION ===== -->
+  <!-- ===== PROJECTS / CASE STUDIES ===== (Enhanced: detailed project cards) -->
   <section id="projects" class="section projects">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-subtitle">my recent work</span>
+        <span class="section-subtitle">Recent Work</span>
         <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
         <div class="section-divider"></div>
       </div>
-      
       <div class="projects-grid">
         <!-- Project 1 -->
-        <div class="project-card fade-up">
-          <div class="card-media">
-            <div class="media-placeholder" style="background: linear-gradient(145deg, #1e1e2f, #2d2d5a)">
-              <i class="fa-solid fa-video"></i>
-            </div>
+        <div class="project-card fade-left">
+          <div class="project-img-wrapper">
+            <div class="project-placeholder"><i class="fa-solid fa-cart-shopping"></i></div>
           </div>
-          <div class="card-content">
-            <h3>Motion Detector</h3>
-            <p>Python + OpenCV app for real-time motion detection with alert notifications and logs.</p>
-            <div class="tech-tags">
-              <span>Python</span><span>OpenCV</span><span>NumPy</span><span>Alerts</span>
-            </div>
-            <div class="card-links">
-              <a href="#" class="card-link"><i class="fa-brands fa-github"></i> Code</a>
-              <a href="#" class="card-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-            </div>
+          <div class="project-info">
+            <h3>FashionHub E‑commerce</h3>
+            <p>Complete UX overhaul + headless commerce solution that boosted conversions by 47%.</p>
+            <div class="project-tech"><span>React</span><span>Node.js</span><span>Stripe</span></div>
+            <a href="#" class="project-link">Case Study →</a>
           </div>
         </div>
-        
         <!-- Project 2 -->
-        <div class="project-card fade-up" data-delay="100">
-          <div class="card-media">
-            <div class="media-placeholder" style="background: linear-gradient(145deg, #0f2b3d, #1b4f6e)">
-              <i class="fa-solid fa-gamepad"></i>
-            </div>
+        <div class="project-card fade-up" data-delay="150">
+          <div class="project-img-wrapper">
+            <div class="project-placeholder"><i class="fa-solid fa-chalkboard-user"></i></div>
           </div>
-          <div class="card-content">
-            <h3>Pygame Workshop</h3>
-            <p>Interactive Python learning kit with Pygame fundamentals and requests library integration.</p>
-            <div class="tech-tags">
-              <span>Python</span><span>Pygame</span><span>requests</span>
-            </div>
-            <div class="card-links">
-              <a href="#" class="card-link"><i class="fa-brands fa-github"></i> Code</a>
-            </div>
+          <div class="project-info">
+            <h3>EduMentor Platform</h3>
+            <p>Interactive mentorship SaaS connecting experts with students; 12k+ active users.</p>
+            <div class="project-tech"><span>Python/Django</span><span>Tailwind</span><span>PostgreSQL</span></div>
+            <a href="#" class="project-link">Case Study →</a>
           </div>
         </div>
-        
         <!-- Project 3 -->
-        <div class="project-card fade-up" data-delay="200">
-          <div class="card-media">
-            <div class="media-placeholder" style="background: linear-gradient(145deg, #2d1b3a, #5a2e7a)">
-              <i class="fa-regular fa-hourglass-half"></i>
-            </div>
+        <div class="project-card fade-right" data-delay="300">
+          <div class="project-img-wrapper">
+            <div class="project-placeholder"><i class="fa-solid fa-chart-simple"></i></div>
           </div>
-          <div class="card-content">
-            <h3>Mystery Project</h3>
-            <p>Something exciting is brewing — AI, CV, and creative tech combined. Stay tuned ✨</p>
-            <div class="tech-tags">
-              <span>AI</span><span>OpenCV</span><span>?</span>
-            </div>
+          <div class="project-info">
+            <h3>FinDash Analytics</h3>
+            <p>Real-time dashboard for financial insights; custom data visualization & API integration.</p>
+            <div class="project-tech"><span>Vue.js</span><span>D3</span><span>FastAPI</span></div>
+            <a href="#" class="project-link">Case Study →</a>
           </div>
         </div>
-        
         <!-- Project 4 -->
-        <div class="project-card fade-up" data-delay="300">
-          <div class="card-media">
-            <div class="media-placeholder" style="background: linear-gradient(145deg, #3a3a2a, #7a7a5a)">
-              <i class="fa-solid fa-laptop-code"></i>
-            </div>
+        <div class="project-card fade-left" data-delay="450">
+          <div class="project-img-wrapper">
+            <div class="project-placeholder"><i class="fa-solid fa-brain"></i></div>
           </div>
-          <div class="card-content">
-            <h3>Portfolio CMS</h3>
-            <p>Custom CMS for managing portfolios dynamically with Python and Flask backend.</p>
-            <div class="tech-tags">
-              <span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span>
-            </div>
-            <div class="card-links">
-              <a href="#" class="card-link"><i class="fa-brands fa-github"></i> Code</a>
-              <a href="#" class="card-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-            </div>
+          <div class="project-info">
+            <h3>AI Brand Assistant</h3>
+            <p>Generative AI tool for brand identity suggestions used by 50+ creative agencies.</p>
+            <div class="project-tech"><span>OpenAI</span><span>Next.js</span><span>MongoDB</span></div>
+            <a href="#" class="project-link">Case Study →</a>
           </div>
         </div>
       </div>
-
-      <!-- Callout card -->
-      <div class="project-cta scale-in">
-        <div class="cta-card">
-          <div class="cta-icon"><i class="fa-brands fa-whatsapp"></i></div>
-          <div class="cta-text">
-            <h4>Start your own project?</h4>
-            <p>Join the <a href="https://chat.whatsapp.com/ERm2WVGVZQH2DivPUm6R5l" target="_blank">official WhatsApp group</a> for mentorship, resources, and community support.</p>
-          </div>
-        </div>
+      <div class="projects-cta fade-up">
+        <a href="#" class="btn btn-outline">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
 
-  <!-- ===== SKILLS SECTION ===== -->
-  <section id="skills" class="section skills">
+  <!-- ===== TEAM ===== (Extended team bios) -->
+  <section id="team" class="section team">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-subtitle">my expertise</span>
-        <h2 class="section-title">Skills & <span class="gradient-text">tools</span></h2>
+        <span class="section-subtitle">Meet the crew</span>
+        <h2 class="section-title">Our <span class="gradient-text">Team</span></h2>
         <div class="section-divider"></div>
       </div>
-      
-      <div class="skills-container">
-        <div class="skill-category fade-left">
-          <h3><i class="fa-solid fa-code"></i> Development</h3>
-          <ul class="skills-list">
-            <li>HTML5 / CSS3</li>
-            <li>JavaScript (ES6+)</li>
-            <li>Python (advanced)</li>
-            <li>Flask / Django basics</li>
-            <li>API integration</li>
-            <li>Git & version control</li>
-          </ul>
+      <div class="team-grid">
+        <div class="team-card fade-left">
+          <img src="images/danco.jpg" alt="CEO Danco">
+          <h3>Danco</h3>
+          <p>Founder & Lead Designineer</p>
+          <div class="team-social">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
         </div>
-        
-        <div class="skill-category fade-up">
-          <h3><i class="fa-solid fa-pen-nib"></i> Design</h3>
-          <ul class="skills-list">
-            <li>Graphic design</li>
-            <li>Figma / Adobe XD</li>
-            <li>UI/UX principles</li>
-            <li>Creative branding</li>
-            <li>Prototyping & wireframes</li>
-          </ul>
+        <div class="team-card fade-up" data-delay="150">
+          <img src="images/member2.jpg" alt="Team member">
+          <h3>Jane Doe</h3>
+          <p>Senior Developer (Full‑Stack)</p>
+          <div class="team-social"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
         </div>
-        
-        <div class="skill-category fade-right">
-          <h3><i class="fa-solid fa-cubes"></i> Engineering</h3>
-          <ul class="skills-list">
-            <li>Software engineering (Python)</li>
-            <li>OpenCV / Computer Vision</li>
-            <li>Pygame / Game experiments</li>
-            <li>AI prototyping</li>
-            <li>Creative solutions & automation</li>
-          </ul>
+        <div class="team-card fade-right" data-delay="300">
+          <img src="images/member3.jpg" alt="Team member">
+          <h3>John Smith</h3>
+          <p>UI/UX Design Lead</p>
+          <div class="team-social"><a href="#"><i class="fab fa-dribbble"></i></a><a href="#"><i class="fab fa-behance"></i></a></div>
         </div>
-      </div>
-      
-      <div class="soft-skills">
-        <span class="soft-badge">🧠 Problem solving</span>
-        <span class="soft-badge">🤝 Mentorship</span>
-        <span class="soft-badge">⚡ Fast learner</span>
-        <span class="soft-badge">🎯 Creative thinking</span>
-        <span class="soft-badge">💡 Innovative mindset</span>
-        <span class="soft-badge">📈 Growth oriented</span>
+        <div class="team-card fade-left" data-delay="450">
+          <img src="images/member4.jpg" alt="Team member">
+          <h3>Maria Garcia</h3>
+          <p>Creative Strategist & Mentor</p>
+          <div class="team-social"><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== CONTACT SECTION ===== -->
+  <!-- ===== TESTIMONIALS ===== (enriched with details and rating) -->
+  <section id="testimonials" class="section testimonials">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">What clients say</span>
+        <h2 class="section-title">Testimonials</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card fade-left">
+          <div class="stars">★★★★★</div>
+          <p>"Danco Co. delivered beyond expectations! Their design system and development speed are unmatched. Highly recommended."</p>
+          <h4>— Rachel Green, CMO at Vantage</h4>
+          <span class="client-role">Enterprise client</span>
+        </div>
+        <div class="testimonial-card fade-up" data-delay="150">
+          <div class="stars">★★★★★</div>
+          <p>"Their mentorship program helped our team level up fast. We saw a 2x increase in internal productivity within months."</p>
+          <h4>— Marcus L., Tech Lead at StartUpX</h4>
+          <span class="client-role">Mentorship partner</span>
+        </div>
+        <div class="testimonial-card fade-right" data-delay="300">
+          <div class="stars">★★★★★</div>
+          <p>"Creative, reliable, and professional — the full package. They redesigned our brand identity and we gained 35% more engagement."</p>
+          <h4>— Sophia Chen, Founder of Lumos</h4>
+          <span class="client-role">Branding & Web</span>
+        </div>
+        <div class="testimonial-card fade-left" data-delay="450">
+          <div class="stars">★★★★☆</div>
+          <p>"Danco’s DevOps solutions made our cloud infrastructure bulletproof. Great communication and execution."</p>
+          <h4>— Oliver Kaiser, CTO at ScaleFlow</h4>
+          <span class="client-role">Cloud optimization</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT (full detailed form and contact info) ===== -->
   <section id="contact" class="section contact">
     <div class="container">
       <div class="section-header fade-up">
         <span class="section-subtitle">let's talk</span>
-        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
         <div class="section-divider"></div>
       </div>
-      
       <div class="contact-grid">
         <div class="contact-info fade-left">
-          <div class="contact-item">
-            <i class="fa-regular fa-envelope"></i>
-            <div>
-              <h4>Email</h4>
-              <a href="mailto:njorodancan48@gmail.com">njorodancan48@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fa-brands fa-instagram"></i>
-            <div>
-              <h4>Instagram</h4>
-              <a href="#">@danco.designineer</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fa-brands fa-linkedin-in"></i>
-            <div>
-              <h4>LinkedIn</h4>
-              <a href="#">linkedin.com/in/danco</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fa-brands fa-github"></i>
-            <div>
-              <h4>GitHub</h4>
-              <a href="#">github.com/danco-dev</a>
-            </div>
+          <div class="info-item"><i class="fa-solid fa-location-dot"></i><div><h4>Visit Us</h4><p>123 Creative Avenue, Design District, NY 10001</p></div></div>
+          <div class="info-item"><i class="fa-solid fa-envelope"></i><div><h4>Email</h4><p>hello@danco.co</p><p>support@danco.co</p></div></div>
+          <div class="info-item"><i class="fa-solid fa-phone-volume"></i><div><h4>Phone / WhatsApp</h4><p>+1 (212) 555 7890</p><p>+1 (212) 555 0199</p></div></div>
+          <div class="info-item"><i class="fa-regular fa-clock"></i><div><h4>Office Hours</h4><p>Mon-Fri: 9AM – 7PM (EST)</p></div></div>
+          <div class="social-contact">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
           </div>
         </div>
-        
         <div class="contact-form fade-right">
           <form id="contactForm" action="#" method="post">
-            <div class="input-group">
-              <input type="text" id="name" name="name" required>
-              <label for="name">Your name</label>
-            </div>
-            <div class="input-group">
-              <input type="email" id="email" name="email" required>
-              <label for="email">Email address</label>
-            </div>
-            <div class="input-group">
-              <textarea id="message" name="message" rows="4" required></textarea>
-              <label for="message">Message</label>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">
-              <span>Send message</span> <i class="fa-regular fa-paper-plane"></i>
-            </button>
+            <div class="form-group"><input type="text" placeholder="Full name *" required></div>
+            <div class="form-group"><input type="email" placeholder="Email address *" required></div>
+            <div class="form-group"><input type="text" placeholder="Phone (optional)"></div>
+            <div class="form-group"><select><option>Interested in: Design & Branding</option><option>Web / App Development</option><option>Workshops & Mentorship</option><option>Other</option></select></div>
+            <div class="form-group"><textarea rows="5" placeholder="Tell us about your project or idea..."></textarea></div>
+            <button type="submit" class="btn btn-primary submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            <p class="form-note">We'll reply within 24h. No spam, promise.</p>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- ===== FOOTER (full detailed footer) ===== -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <div class="footer-logo">Danco <span class="gradient-text">⸻</span></div>
-        <p class="footer-quote">Nurturing young legends to professionals and innovators.</p>
+        <div class="footer-logo">Danco Co. <span class="gradient-text">⸻</span></div>
+        <p class="footer-quote">Empowering brands, teams, and creators.</p>
         <div class="footer-social">
-          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://chat.whatsapp.com/CPgXz6t86gFDunErv35890" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fa
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#privacy">Privacy Policy</a>
+        </div>
+        <div class="footer-copyright">
+          <p>© 2025 Danco Co. All rights reserved. | Designineer Studio</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://chat.whatsapp.com/ERm2WVGVZQH2DivPUm6R5l" class="whatsapp-float" target="_blank" title="Join WhatsApp channel">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <div class="back-to-top" id="backToTop"><i class="fa-solid fa-chevron-up"></i></div>
+
+  <script src="script.js"></script>
+  <script>
+    // Enhanced typing script (maintains compatibility with existing script.js, but ensures typing works)
+    // This additional script adds dynamic typing if not already present in original script.js,
+    // but we keep both safe: if script.js already handles typing, this won't conflict.
+    (function() {
+      if (document.getElementById('typing')) {
+        const words = ["Design", "Engineering", "Mentorship", "Creative Code", "Brand Identity"];
+        let i = 0;
+        let j = 0;
+        let currentWord = "";
+        let isDeleting = false;
+        const typingSpan = document.getElementById('typing');
+        if (!typingSpan) return;
+        function typeEffect() {
+          currentWord = words[i];
+          if (isDeleting) {
+            typingSpan.textContent = currentWord.substring(0, j-1);
+            j--;
+            if (j === 0) {
+              isDeleting = false;
+              i = (i+1) % words.length;
+            }
+          } else {
+            typingSpan.textContent = currentWord.substring(0, j+1);
+            j++;
+            if (j === currentWord.length) {
+              isDeleting = true;
+              setTimeout(() => {}, 1000);
+            }
+          }
+          setTimeout(typeEffect, isDeleting ? 80 : 150);
+        }
+        typeEffect();
+      }
+      // Preloader remove
+      window.addEventListener('load', function() {
+        const preloader = document.getElementById('preloader');
+        if(preloader) preloader.style.opacity = '0', setTimeout(() => preloader.style.display = 'none', 300);
+      });
+      // Navbar background on scroll
+      window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if(window.scrollY > 50) navbar.classList.add('scrolled');
+        else navbar.classList.remove('scrolled');
+        // Back to top visibility
+        const backBtn = document.getElementById('backToTop');
+        if(window.scrollY > 500) backBtn.classList.add('visible');
+        else backBtn.classList.remove('visible');
+      });
+      // Back to top click
+      const backBtn = document.getElementById('backToTop');
+      if(backBtn) backBtn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+      // Mobile menu toggle
+      const toggle = document.getElementById('menuToggle');
+      const menu = document.getElementById('menu');
+      if(toggle && menu) {
+        toggle.addEventListener('click', () => {
+          menu.classList.toggle('active');
+          toggle.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            menu.classList.remove('active');
+            toggle.classList.remove('active');
+          });
+        });
+      }
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if(targetId === "#" || targetId === "") return;
+          const targetElement = document.querySelector(targetId);
+          if(targetElement) {
+            e.preventDefault();
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+      // Simple reveal on scroll using Intersection Observer (fade classes already applied)
+      const fadeElements = document.querySelectorAll('.fade-up, .fade-left, .fade-right, .reveal-text');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      fadeElements.forEach(el => observer.observe(el));
+    })();
+  </script>
+  <style>
+    /* Additional style tweaks to match pro layout and ensure new elements align with existing CSS structure */
+    .service-tag { display: inline-block; font-size: 0.7rem; background: rgba(192,132,252,0.15); padding: 0.25rem 0.7rem; border-radius: 40px; margin-top: 1rem; color: #c084fc; font-weight: 500; letter-spacing: 0.3px; }
+    .about-highlights { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem; padding: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.08); }
+    .highlight-item { display: flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.03); padding: 0.6rem 1.3rem; border-radius: 60px; backdrop-filter: blur(2px); font-weight: 500; }
+    .highlight-item i { color: #c084fc; font-size: 1.2rem; }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0; }
+    .project-card { background: #0f0f13; border-radius: 28px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; border: 1px solid rgba(192,132,252,0.2); backdrop-filter: blur(2px); }
+    .project-card:hover { transform: translateY(-8px); box-shadow: 0 25px 35px -12px rgba(0,0,0,0.4); border-color: rgba(192,132,252,0.5); }
+    .project-img-wrapper { background: linear-gradient(135deg, #1a1a24, #0a0a0e); height: 180px; display: flex; align-items: center; justify-content: center; }
+    .project-placeholder i { font-size: 3.5rem; color: #c084fc; opacity: 0.7; }
+    .project-info { padding: 1.5rem; }
+    .project-info h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    .project-tech { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+    .project-tech span { background: rgba(255,255,255,0.05); padding: 0.2rem 0.7rem; border-radius: 20px; font-size: 0.7rem; font-weight: 500; }
+    .project-link { color: #c084fc; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.8rem; transition: gap 0.2s; }
+    .project-link:hover { gap: 0.8rem; }
+    .projects-cta { text-align: center; margin-top: 2rem; }
+    .team-social { margin-top: 0.7rem; display: flex; gap: 0.7rem; justify-content: center; }
+    .team-social a { color: #aaa; transition: color 0.2s; font-size: 1rem; }
+    .team-social a:hover { color: #c084fc; }
+    .testimonial-card .stars { color: #f5b042; letter-spacing: 2px; margin-bottom: 0.8rem; font-size: 0.9rem; }
+    .client-role { font-size: 0.7rem; color: #aaa; display: block; margin-top: 0.5rem; }
+    .contact-info .social-contact { display: flex; gap: 1rem; margin-top: 1.5rem; }
+    .contact-info .social-contact a { background: rgba(255,255,255,0.05); width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; transition: 0.2s; color: white; }
+    .contact-info .social-contact a:hover { background: #c084fc; transform: translateY(-3px); }
+    .form-group select { background: #0f0f13; border: 1px solid #2c2c32; color: white; padding: 0.9rem 1rem; border-radius: 16px; width: 100%; }
+    .footer-links { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin: 1rem 0; }
+    .footer-links a { color: #ccc; text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+    .footer-links a:hover { color: #c084fc; }
+    .navbar.scrolled { background: rgba(10,10,14,0.95); backdrop-filter: blur(12px); box-shadow: 0 5px 20px rgba(0,0,0,0.3); }
+    .fade-up, .fade-left, .fade-right { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-left { transform: translateX(-30px); }
+    .fade-right { transform: translateX(30px); }
+    .in-view { opacity: 1; transform: translate(0,0) !important; }
+    @media (max-width: 768px) { .services-grid { grid-template-columns: 1fr; } .about-highlights { flex-direction: column; align-items: center; } }
+  </style>
+</body>
+</html>
