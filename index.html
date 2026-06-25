@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Danco Designineer. | Pro Company Portfolio</title>
-  <!-- Font Awesome 6 (free) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danco Co. | Design & Engineering Agency</title>
+
+  <!-- Font Awesome 6 (Free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== PRELOADER ===== -->
+  <!-- ============================================================
+  PRELOADER
+  ============================================================ -->
   <div class="preloader" id="preloader">
     <div class="loader"></div>
   </div>
 
-  <!-- ===== NAVBAR ===== -->
+  <!-- ============================================================
+  NAVIGATION
+  ============================================================ -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <div class="nav-left">
         <div class="logo-img">
-          <img src="images/logo.png" alt="Danco" onerror="this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2218%22%20fill%3D%22%23c084fc%22%2F%3E%3Ctext%20x%3D%229%22%20y%3D%2227%22%20fill%3D%22white%22%20font-size%3D%2218%22%3ED%3C%2Ftext%3E%3C%2Fsvg%3E'">
+          <img src="images/logo.png" alt="Danco Co." onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2244%22 height=%2244%22 viewBox=%220 0 44 44%22%3E%3Ccircle cx=%2222%22 cy=%2222%22 r=%2220%22 fill=%22%237c3aed%22/%3E%3Ctext x=%229%22 y=%2230%22 fill=%22white%22 font-size=%2220%22 font-weight=%22700%22%3ED%3C/text%3E%3C/svg%3E'" />
         </div>
-        <div class="logo-text">Danco</div>
+        <span class="logo-text">Danco</span>
       </div>
-      <div class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
       <ul class="menu" id="menu">
         <li><a href="#home" class="nav-link active">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
@@ -41,18 +51,28 @@
     </div>
   </nav>
 
-  <!-- ===== HERO / COMPANY STATS ===== -->
+  <!-- ============================================================
+  HERO
+  ============================================================ -->
   <header id="home" class="hero">
     <div class="hero-content">
-      <div class="hero-badge animate-float">✨ designineer / creative agency</div>
-      <h1 class="hero-title reveal-text">Welcome to <span class="gradient-text">Danco Co.</span></h1>
+      <div class="hero-badge">✦ Design &amp; Engineering Agency</div>
+      <h1 class="hero-title">
+        Welcome to <span class="gradient-text">Danco Co.</span>
+      </h1>
       <p class="hero-subtitle">We engineer brands, digital products, and creative solutions.</p>
       <div class="hero-typed">
-        <h2 class="typed-output"><span id="typing"></span><span class="typed-cursor">|</span></h2>
+        <h2 class="typed-output">
+          <span id="typing"></span><span class="typed-cursor"></span>
+        </h2>
       </div>
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary"><span>Get a Quote</span><i class="fa-solid fa-arrow-right"></i></a>
-        <a href="#projects" class="btn btn-outline"><span>See Work</span><i class="fa-regular fa-eye"></i></a>
+        <a href="#contact" class="btn btn-primary">
+          <span>Get a Quote</span><i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#projects" class="btn btn-outline">
+          <span>View Work</span><i class="fa-regular fa-eye"></i>
+        </a>
       </div>
       <div class="hero-social">
         <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -62,153 +82,159 @@
       </div>
     </div>
 
-    <div class="hero-stats fade-up">
+    <div class="hero-stats">
       <div class="stat-card">
-        <h3>250+</h3><p>Projects Completed</p>
+        <h3>250+</h3>
+        <p>Projects Completed</p>
       </div>
       <div class="stat-card">
-        <h3>100+</h3><p>Happy Clients</p>
+        <h3>100+</h3>
+        <p>Happy Clients</p>
       </div>
       <div class="stat-card">
-        <h3>10+</h3><p>Years Experience</p>
+        <h3>10+</h3>
+        <p>Years Experience</p>
       </div>
     </div>
 
     <div class="hero-scroll">
-      <a href="#about" class="scroll-down"><span>Scroll</span><i class="fa-solid fa-chevron-down"></i></a>
+      <a href="#about" class="scroll-down">
+        <span>Scroll</span><i class="fa-solid fa-chevron-down"></i>
+      </a>
     </div>
   </header>
 
-  <!-- ===== ABOUT COMPANY ===== -->
+  <!-- ============================================================
+  ABOUT
+  ============================================================ -->
   <section id="about" class="section about">
     <div class="container">
-      <div class="section-header fade-up">
-        <span class="section-subtitle">Who we are</span>
+      <div class="section-header">
+        <span class="section-subtitle">Who We Are</span>
         <h2 class="section-title">About <span class="gradient-text">Danco Co.</span></h2>
         <div class="section-divider"></div>
       </div>
       <div class="about-grid">
-        <div class="about-card fade-left">
+        <div class="about-card">
           <div class="about-icon"><i class="fa-solid fa-building"></i></div>
           <h3>Our Vision</h3>
           <p>To be a leading creative engineering agency, empowering clients with world-class digital solutions.</p>
         </div>
-        <div class="about-card fade-up" data-delay="150">
-          <div class="about-icon"><i class="fa-solid fa-mission"></i></div>
+        <div class="about-card">
+          <div class="about-icon"><i class="fa-solid fa-flag"></i></div>
           <h3>Our Mission</h3>
           <p>Design, engineer, and mentor — combining technology, creativity, and strategy for maximum impact.</p>
         </div>
-        <div class="about-card fade-right" data-delay="300">
-          <div class="about-icon"><i class="fa-solid fa-people-group"></i></div>
+        <div class="about-card">
+          <div class="about-icon"><i class="fa-solid fa-handshake"></i></div>
           <h3>Our Values</h3>
           <p>Innovation, transparency, quality, mentorship, and community growth drive everything we do.</p>
         </div>
       </div>
-      <!-- additional company highlight: awards & global presence -->
-      <div class="about-highlights fade-up" style="margin-top: 3rem;">
+      <div class="about-highlights">
         <div class="highlight-item"><i class="fa-solid fa-award"></i> <span>Awwwards Nominee 2024</span></div>
-        <div class="highlight-item"><i class="fa-solid fa-globe"></i> <span>Global clients in 15+ countries</span></div>
+        <div class="highlight-item"><i class="fa-solid fa-globe"></i> <span>Global Clients in 15+ Countries</span></div>
         <div class="highlight-item"><i class="fa-solid fa-certificate"></i> <span>Google Partner Certified</span></div>
       </div>
     </div>
   </section>
 
-  <!-- ===== SERVICES ===== -->
+  <!-- ============================================================
+  SERVICES
+  ============================================================ -->
   <section id="services" class="section services">
     <div class="container">
-      <div class="section-header fade-up">
-        <span class="section-subtitle">What we offer</span>
+      <div class="section-header">
+        <span class="section-subtitle">What We Offer</span>
         <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
         <div class="section-divider"></div>
       </div>
       <div class="services-grid">
-        <div class="service-card fade-left">
-          <i class="fa-solid fa-paint-brush"></i>
+        <div class="service-card">
+          <i class="fa-solid fa-paintbrush"></i>
           <h3>UI/UX Design</h3>
-          <p>Crafting intuitive and visually stunning interfaces for web & mobile apps.</p>
+          <p>Crafting intuitive and visually stunning interfaces for web and mobile applications.</p>
           <span class="service-tag">Figma · Prototyping · Usability</span>
         </div>
-        <div class="service-card fade-up" data-delay="150">
+        <div class="service-card">
           <i class="fa-solid fa-code"></i>
-          <h3>Web & App Development</h3>
-          <p>Custom web apps, Python solutions, and full-stack development tailored to client needs.</p>
+          <h3>Web &amp; App Development</h3>
+          <p>Custom web applications, Python solutions, and full-stack development tailored to client needs.</p>
           <span class="service-tag">React · Node · Python · Django</span>
         </div>
-        <div class="service-card fade-right" data-delay="300">
+        <div class="service-card">
           <i class="fa-solid fa-bullhorn"></i>
           <h3>Brand Strategy</h3>
           <p>Strategic branding, identity creation, and marketing consultancy for modern businesses.</p>
           <span class="service-tag">Identity · Positioning · Storytelling</span>
         </div>
-        <div class="service-card fade-left" data-delay="450">
-          <i class="fa-solid fa-chalkboard-teacher"></i>
-          <h3>Workshops & Mentorship</h3>
+        <div class="service-card">
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <h3>Workshops &amp; Mentorship</h3>
           <p>Guiding teams and individuals in design, development, and creative problem-solving.</p>
-          <span class="service-tag">Training · Code reviews · Career</span>
+          <span class="service-tag">Training · Code Reviews · Career</span>
         </div>
-        <div class="service-card fade-up" data-delay="600">
+        <div class="service-card">
           <i class="fa-solid fa-chart-line"></i>
-          <h3>SEO & Analytics</h3>
+          <h3>SEO &amp; Analytics</h3>
           <p>Data-driven growth strategies, search visibility, and performance optimization.</p>
           <span class="service-tag">SEO · SEM · Conversion</span>
         </div>
-        <div class="service-card fade-right" data-delay="750">
+        <div class="service-card">
           <i class="fa-solid fa-cloud-arrow-up"></i>
-          <h3>Cloud & DevOps</h3>
-          <p>AWS, CI/CD pipelines, scalable infrastructure for high-performance apps.</p>
+          <h3>Cloud &amp; DevOps</h3>
+          <p>AWS, CI/CD pipelines, and scalable infrastructure for high-performance applications.</p>
           <span class="service-tag">AWS · Docker · Kubernetes</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== PROJECTS / CASE STUDIES ===== (Enhanced: detailed project cards) -->
+  <!-- ============================================================
+  PROJECTS
+  ============================================================ -->
   <section id="projects" class="section projects">
     <div class="container">
-      <div class="section-header fade-up">
+      <div class="section-header">
         <span class="section-subtitle">Recent Work</span>
         <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
         <div class="section-divider"></div>
       </div>
       <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card fade-left">
+        <div class="project-card">
           <div class="project-img-wrapper">
             <div class="project-placeholder"><i class="fa-solid fa-cart-shopping"></i></div>
           </div>
           <div class="project-info">
             <h3>FashionHub E‑commerce</h3>
-            <p>Complete UX overhaul + headless commerce solution that boosted conversions by 47%.</p>
+            <p>Complete UX overhaul with headless commerce solution that boosted conversions by 47%.</p>
             <div class="project-tech"><span>React</span><span>Node.js</span><span>Stripe</span></div>
             <a href="#" class="project-link">Case Study →</a>
           </div>
         </div>
-        <!-- Project 2 -->
-        <div class="project-card fade-up" data-delay="150">
+        <div class="project-card">
           <div class="project-img-wrapper">
             <div class="project-placeholder"><i class="fa-solid fa-chalkboard-user"></i></div>
           </div>
           <div class="project-info">
             <h3>EduMentor Platform</h3>
-            <p>Interactive mentorship SaaS connecting experts with students; 12k+ active users.</p>
-            <div class="project-tech"><span>Python/Django</span><span>Tailwind</span><span>PostgreSQL</span></div>
+            <p>Interactive mentorship SaaS connecting experts with students; 12,000+ active users.</p>
+            <div class="project-tech"><span>Django</span><span>Tailwind</span><span>PostgreSQL</span></div>
             <a href="#" class="project-link">Case Study →</a>
           </div>
         </div>
-        <!-- Project 3 -->
-        <div class="project-card fade-right" data-delay="300">
+        <div class="project-card">
           <div class="project-img-wrapper">
             <div class="project-placeholder"><i class="fa-solid fa-chart-simple"></i></div>
           </div>
           <div class="project-info">
             <h3>FinDash Analytics</h3>
-            <p>Real-time dashboard for financial insights; custom data visualization & API integration.</p>
+            <p>Real-time financial dashboard with custom data visualization and API integration.</p>
             <div class="project-tech"><span>Vue.js</span><span>D3</span><span>FastAPI</span></div>
             <a href="#" class="project-link">Case Study →</a>
           </div>
         </div>
-        <!-- Project 4 -->
-        <div class="project-card fade-left" data-delay="450">
+        <div class="project-card">
           <div class="project-img-wrapper">
             <div class="project-placeholder"><i class="fa-solid fa-brain"></i></div>
           </div>
@@ -220,136 +246,194 @@
           </div>
         </div>
       </div>
-      <div class="projects-cta fade-up">
+      <div class="projects-cta">
         <a href="#" class="btn btn-outline">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
 
-  <!-- ===== TEAM ===== (Extended team bios) -->
+  <!-- ============================================================
+  TEAM
+  ============================================================ -->
   <section id="team" class="section team">
     <div class="container">
-      <div class="section-header fade-up">
-        <span class="section-subtitle">Meet the crew</span>
+      <div class="section-header">
+        <span class="section-subtitle">Meet the Crew</span>
         <h2 class="section-title">Our <span class="gradient-text">Team</span></h2>
         <div class="section-divider"></div>
       </div>
       <div class="team-grid">
-        <div class="team-card fade-left">
-          <img src="images/danco.jpg" alt="CEO Danco">
+        <div class="team-card">
+          <img src="images/danco.jpg" alt="Danco - Founder" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22110%22 height=%22110%22 viewBox=%220 0 110 110%22%3E%3Ccircle cx=%2255%22 cy=%2255%22 r=%2250%22 fill=%22%237c3aed%22/%3E%3Ctext x=%2232%22 y=%2265%22 fill=%22white%22 font-size=%2236%22 font-weight=%22700%22%3ED%3C/text%3E%3C/svg%3E'" />
           <h3>Danco</h3>
-          <p>Founder & Lead Designineer</p>
+          <p>Founder &amp; Lead Designineer</p>
           <div class="team-social">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
           </div>
         </div>
-        <div class="team-card fade-up" data-delay="150">
-          <img src="images/member2.jpg" alt="Team member">
+        <div class="team-card">
+          <img src="images/member2.jpg" alt="Kelvin M" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22110%22 height=%22110%22 viewBox=%220 0 110 110%22%3E%3Ccircle cx=%2255%22 cy=%2255%22 r=%2250%22 fill=%22%233b82f6%22/%3E%3Ctext x=%2230%22 y=%2265%22 fill=%22white%22 font-size=%2232%22 font-weight=%22700%22%3EKM%3C/text%3E%3C/svg%3E'" />
           <h3>Kelvin M</h3>
-          <p>Senior Developer (Full‑Stack)</p>
-          <div class="team-social"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+          <p>Senior Full‑Stack Developer</p>
+          <div class="team-social">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
         </div>
-        <div class="team-card fade-right" data-delay="300">
-          <img src="images/member3.jpg" alt="Team member">
+        <div class="team-card">
+          <img src="images/member3.jpg" alt="Frank N" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22110%22 height=%22110%22 viewBox=%220 0 110 110%22%3E%3Ccircle cx=%2255%22 cy=%2255%22 r=%2250%22 fill=%22%23ec4899%22/%3E%3Ctext x=%2230%22 y=%2265%22 fill=%22white%22 font-size=%2232%22 font-weight=%22700%22%3EFN%3C/text%3E%3C/svg%3E'" />
           <h3>Frank N</h3>
           <p>UI/UX Design Lead</p>
-          <div class="team-social"><a href="#"><i class="fab fa-dribbble"></i></a><a href="#"><i class="fab fa-behance"></i></a></div>
+          <div class="team-social">
+            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="#"><i class="fa-brands fa-behance"></i></a>
+          </div>
         </div>
-        <div class="team-card fade-left" data-delay="450">
-          <img src="images/member4.jpg" alt="Team member">
+        <div class="team-card">
+          <img src="images/member4.jpg" alt="Jacob N" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22110%22 height=%22110%22 viewBox=%220 0 110 110%22%3E%3Ccircle cx=%2255%22 cy=%2255%22 r=%2250%22 fill=%22%23f59e0b%22/%3E%3Ctext x=%2230%22 y=%2265%22 fill=%22white%22 font-size=%2232%22 font-weight=%22700%22%3EJN%3C/text%3E%3C/svg%3E'" />
           <h3>Jacob N</h3>
-          <p>Creative Strategist & Mentor</p>
-          <div class="team-social"><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+          <p>Creative Strategist &amp; Mentor</p>
+          <div class="team-social">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== TESTIMONIALS ===== (enriched with details and rating) -->
+  <!-- ============================================================
+  TESTIMONIALS
+  ============================================================ -->
   <section id="testimonials" class="section testimonials">
     <div class="container">
-      <div class="section-header fade-up">
-        <span class="section-subtitle">What clients say</span>
+      <div class="section-header">
+        <span class="section-subtitle">What Clients Say</span>
         <h2 class="section-title">Testimonials</h2>
         <div class="section-divider"></div>
       </div>
       <div class="testimonial-grid">
-        <div class="testimonial-card fade-left">
-          <div class="stars">★★★★★</div>
-          <p>"Danco Co. delivered beyond expectations! Their design system and development speed are unmatched. Highly recommended."</p>
-          <h4>— Kinuthia Mwangi, CMO at Vantage</h4>
-          <span class="client-role">Enterprise client</span>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Danco Co. delivered beyond our expectations. Their design system and development speed are unmatched. Highly recommended."</p>
+          <h4>— Kinuthia Mwangi</h4>
+          <span class="client-role">CMO at Vantage</span>
         </div>
-        <div class="testimonial-card fade-up" data-delay="150">
-          <div class="stars">★★★★★</div>
-          <p>"Their mentorship program helped our team level up fast. We saw a 2x increase in internal productivity within months."</p>
-          <h4>— ~unkown~, Tech Lead at StartUpX</h4>
-          <span class="client-role">Mentorship partner</span>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Their mentorship program helped our team level up fast. We saw a 2× increase in internal productivity within months."</p>
+          <h4>— Tech Lead</h4>
+          <span class="client-role">StartUpX</span>
         </div>
-        <div class="testimonial-card fade-right" data-delay="300">
-          <div class="stars">★★★★★</div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
           <p>"Creative, reliable, and professional — the full package. They redesigned our brand identity and we gained 35% more engagement."</p>
-          <h4>— Lec zombie, Founder of Lumos</h4>
-          <span class="client-role">Branding & Web</span>
+          <h4>— Lec Zombie</h4>
+          <span class="client-role">Founder of Lumos</span>
         </div>
-        <div class="testimonial-card fade-left" data-delay="450">
-          <div class="stars">★★★★☆</div>
-          <p>"Danco’s DevOps solutions made our cloud infrastructure bulletproof. Great communication and execution."</p>
-          <h4>— Lydiah Njoroge, CTO at ScaleFlow</h4>
-          <span class="client-role">Cloud optimization</span>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+          <p>"Danco's DevOps solutions made our cloud infrastructure bulletproof. Great communication and execution throughout."</p>
+          <h4>— Lydiah Njoroge</h4>
+          <span class="client-role">CTO at ScaleFlow</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== CONTACT (full detailed form and contact info) ===== -->
+  <!-- ============================================================
+  CONTACT
+  ============================================================ -->
   <section id="contact" class="section contact">
     <div class="container">
-      <div class="section-header fade-up">
-        <span class="section-subtitle">let's talk</span>
+      <div class="section-header">
+        <span class="section-subtitle">Let's Talk</span>
         <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
         <div class="section-divider"></div>
       </div>
       <div class="contact-grid">
-        <div class="contact-info fade-left">
-          <div class="info-item"><i class="fa-solid fa-location-dot"></i><div><h4>Visit Us</h4><p>123 Creative Avenue, Design District, NY 10001</p></div></div>
-          <div class="info-item"><i class="fa-solid fa-envelope"></i><div><h4>Email</h4><p>njorodancan48@gmail.com</p><p>njorodancan48@gmail.com</p></div></div>
-          <div class="info-item"><i class="fa-solid fa-phone-volume"></i><div><h4>Phone / WhatsApp</h4><p>+254 791040869</p><p>+254 713138051</p></div></div>
-          <div class="info-item"><i class="fa-regular fa-clock"></i><div><h4>Office Hours</h4><p>Mon-Fri: 9AM – 7PM (EST)</p></div></div>
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Visit Us</h4>
+              <p>123 Creative Avenue, Design District, NY 10001</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:njorodancan48@gmail.com">njorodancan48@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-phone-volume"></i>
+            <div>
+              <h4>Phone / WhatsApp</h4>
+              <p><a href="tel:+254791040869">+254 791 040 869</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+              <h4>Office Hours</h4>
+              <p>Mon–Fri: 9:00 AM – 7:00 PM (EST)</p>
+            </div>
+          </div>
           <div class="social-contact">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-x-twitter"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
-        <div class="contact-form fade-right">
+        <div class="contact-form">
           <form id="contactForm" action="#" method="post">
-            <div class="form-group"><input type="text" placeholder="Full name *" required></div>
-            <div class="form-group"><input type="email" placeholder="Email address *" required></div>
-            <div class="form-group"><input type="text" placeholder="Phone (optional)"></div>
-            <div class="form-group"><select><option>Interested in: Design & Branding</option><option>Web / App Development</option><option>Workshops & Mentorship</option><option>Other</option></select></div>
-            <div class="form-group"><textarea rows="5" placeholder="Tell us about your project or idea..."></textarea></div>
-            <button type="submit" class="btn btn-primary submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
-            
+            <div class="form-group">
+              <input type="text" placeholder="Full Name *" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email Address *" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Phone Number (optional)" />
+            </div>
+            <div class="form-group">
+              <select>
+                <option value="">Interested in…</option>
+                <option value="design">Design &amp; Branding</option>
+                <option value="development">Web / App Development</option>
+                <option value="mentorship">Workshops &amp; Mentorship</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea rows="5" placeholder="Tell us about your project or idea…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER (full detailed footer) ===== -->
+  <!-- ============================================================
+  FOOTER
+  ============================================================ -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <div class="footer-logo">Danco Co. <span class="gradient-text">⸻</span></div>
+        <div class="footer-logo">Danco Co.</div>
         <p class="footer-quote">Empowering brands, teams, and creators.</p>
         <div class="footer-social">
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
         </div>
         <div class="footer-links">
           <a href="#home">Home</a>
@@ -359,145 +443,25 @@
           <a href="#privacy">Privacy Policy</a>
         </div>
         <div class="footer-copyright">
-          <p>© 2026 Danco Co. All rights reserved. | Designineer Studio</p>
+          <p>&copy; 2026 Danco Co. All rights reserved. &mdash; Design &amp; Engineering Studio</p>
         </div>
       </div>
     </div>
   </footer>
 
-  <a href="https://chat.whatsapp.com/ERm2WVGVZQH2DivPUm6R5l" class="whatsapp-float" target="_blank" title="Join WhatsApp channel">
+  <!-- ============================================================
+  FLOATING ELEMENTS
+  ============================================================ -->
+  <a href="https://chat.whatsapp.com/ERm2WVGVZQH2DivPUm6R5l" class="whatsapp-float" target="_blank" title="Join WhatsApp Channel">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <div class="back-to-top" id="backToTop"><i class="fa-solid fa-chevron-up"></i></div>
+  <div class="back-to-top" id="backToTop">
+    <i class="fa-solid fa-chevron-up"></i>
+  </div>
 
+  <!-- Main JavaScript -->
   <script src="script.js"></script>
-  <script>
 
-    (function() {
-      if (document.getElementById('typing')) {
-        const words = ["Design", "Engineering", "Mentorship", "Creative Code", "Brand Identity"];
-        let i = 0;
-        let j = 0;
-        let currentWord = "";
-        let isDeleting = false;
-        const typingSpan = document.getElementById('typing');
-        if (!typingSpan) return;
-        function typeEffect() {
-          currentWord = words[i];
-          if (isDeleting) {
-            typingSpan.textContent = currentWord.substring(0, j-1);
-            j--;
-            if (j === 0) {
-              isDeleting = false;
-              i = (i+1) % words.length;
-            }
-          } else {
-            typingSpan.textContent = currentWord.substring(0, j+1);
-            j++;
-            if (j === currentWord.length) {
-              isDeleting = true;
-              setTimeout(() => {}, 1000);
-            }
-          }
-          setTimeout(typeEffect, isDeleting ? 80 : 150);
-        }
-        typeEffect();
-      }
-      // Preloader remove
-      window.addEventListener('load', function() {
-        const preloader = document.getElementById('preloader');
-        if(preloader) preloader.style.opacity = '0', setTimeout(() => preloader.style.display = 'none', 300);
-      });
-      // Navbar background on scroll
-      window.addEventListener('scroll', function() {
-        const navbar = document.getElementById('navbar');
-        if(window.scrollY > 50) navbar.classList.add('scrolled');
-        else navbar.classList.remove('scrolled');
-        // Back to top visibility
-        const backBtn = document.getElementById('backToTop');
-        if(window.scrollY > 500) backBtn.classList.add('visible');
-        else backBtn.classList.remove('visible');
-      });
-      // Back to top click
-      const backBtn = document.getElementById('backToTop');
-      if(backBtn) backBtn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
-      // Mobile menu toggle
-      const toggle = document.getElementById('menuToggle');
-      const menu = document.getElementById('menu');
-      if(toggle && menu) {
-        toggle.addEventListener('click', () => {
-          menu.classList.toggle('active');
-          toggle.classList.toggle('active');
-        });
-        document.querySelectorAll('.nav-link').forEach(link => {
-          link.addEventListener('click', () => {
-            menu.classList.remove('active');
-            toggle.classList.remove('active');
-          });
-        });
-      }
-      // Smooth scroll for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          const targetId = this.getAttribute('href');
-          if(targetId === "#" || targetId === "") return;
-          const targetElement = document.querySelector(targetId);
-          if(targetElement) {
-            e.preventDefault();
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-          }
-        });
-      });
-      // Simple reveal on scroll using Intersection Observer (fade classes already applied)
-      const fadeElements = document.querySelectorAll('.fade-up, .fade-left, .fade-right, .reveal-text');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if(entry.isIntersecting) {
-            entry.target.classList.add('in-view');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.2 });
-      fadeElements.forEach(el => observer.observe(el));
-    })();
-  </script>
-  <style>
-    /* Additional style tweaks to match pro layout and ensure new elements align with existing CSS structure */
-    .service-tag { display: inline-block; font-size: 0.7rem; background: rgba(192,132,252,0.15); padding: 0.25rem 0.7rem; border-radius: 40px; margin-top: 1rem; color: #c084fc; font-weight: 500; letter-spacing: 0.3px; }
-    .about-highlights { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem; padding: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.08); }
-    .highlight-item { display: flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.03); padding: 0.6rem 1.3rem; border-radius: 60px; backdrop-filter: blur(2px); font-weight: 500; }
-    .highlight-item i { color: #c084fc; font-size: 1.2rem; }
-    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0; }
-    .project-card { background: #0f0f13; border-radius: 28px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; border: 1px solid rgba(192,132,252,0.2); backdrop-filter: blur(2px); }
-    .project-card:hover { transform: translateY(-8px); box-shadow: 0 25px 35px -12px rgba(0,0,0,0.4); border-color: rgba(192,132,252,0.5); }
-    .project-img-wrapper { background: linear-gradient(135deg, #1a1a24, #0a0a0e); height: 180px; display: flex; align-items: center; justify-content: center; }
-    .project-placeholder i { font-size: 3.5rem; color: #c084fc; opacity: 0.7; }
-    .project-info { padding: 1.5rem; }
-    .project-info h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
-    .project-tech { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
-    .project-tech span { background: rgba(255,255,255,0.05); padding: 0.2rem 0.7rem; border-radius: 20px; font-size: 0.7rem; font-weight: 500; }
-    .project-link { color: #c084fc; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.8rem; transition: gap 0.2s; }
-    .project-link:hover { gap: 0.8rem; }
-    .projects-cta { text-align: center; margin-top: 2rem; }
-    .team-social { margin-top: 0.7rem; display: flex; gap: 0.7rem; justify-content: center; }
-    .team-social a { color: #aaa; transition: color 0.2s; font-size: 1rem; }
-    .team-social a:hover { color: #c084fc; }
-    .testimonial-card .stars { color: #f5b042; letter-spacing: 2px; margin-bottom: 0.8rem; font-size: 0.9rem; }
-    .client-role { font-size: 0.7rem; color: #aaa; display: block; margin-top: 0.5rem; }
-    .contact-info .social-contact { display: flex; gap: 1rem; margin-top: 1.5rem; }
-    .contact-info .social-contact a { background: rgba(255,255,255,0.05); width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; transition: 0.2s; color: white; }
-    .contact-info .social-contact a:hover { background: #c084fc; transform: translateY(-3px); }
-    .form-group select { background: #0f0f13; border: 1px solid #2c2c32; color: white; padding: 0.9rem 1rem; border-radius: 16px; width: 100%; }
-    .footer-links { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin: 1rem 0; }
-    .footer-links a { color: #ccc; text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
-    .footer-links a:hover { color: #c084fc; }
-    .navbar.scrolled { background: rgba(10,10,14,0.95); backdrop-filter: blur(12px); box-shadow: 0 5px 20px rgba(0,0,0,0.3); }
-    .fade-up, .fade-left, .fade-right { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
-    .fade-left { transform: translateX(-30px); }
-    .fade-right { transform: translateX(30px); }
-    .in-view { opacity: 1; transform: translate(0,0) !important; }
-    @media (max-width: 768px) { .services-grid { grid-template-columns: 1fr; } .about-highlights { flex-direction: column; align-items: center; } }
-  </style>
 </body>
 </html>
