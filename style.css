@@ -1,8 +1,8 @@
 :root {
   /* ✨ Removed all purple/blue - using warm neutral tones instead */
-  --primary: #e67e22;          /* Warm orange */
-  --primary-dark: #d35400;     /* Deep orange */
-  --primary-light: #f39c12;    /* Light orange/gold */
+  --primary: #FFFFFF;         
+  --primary-dark: #FFFFFF;     /* Deep orange */
+  --primary-light: #FFFFFF;    /* Light orange/gold */
   --secondary: #e67e22;        /* Orange instead of blue */
   --accent: #f1c40f;           /* Warm yellow accent */
   
