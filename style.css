@@ -1,11 +1,9 @@
 :root {
-  /* ✨ Removed all purple/blue - using warm neutral tones instead */
-  --primary: #FFFFFF;         
-  --primary-dark: #FFFFFF;     /* Deep orange */
-  --primary-light: #FFFFFF;    /* Light orange/gold */
-  --secondary: #e67e22;        /* Orange instead of blue */
-  --accent: #f1c40f;           /* Warm yellow accent */
-  
+   --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.10);
+  --glass-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  --glass-blur: 24px;
+ 
   /* 🪟 Glassmorphism - crisp and clear */
   --glass-bg: rgba(255, 255, 255, 0.06);
   --glass-border: rgba(255, 255, 255, 0.10);
