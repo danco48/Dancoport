@@ -1,73 +1,234 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Danco Co. — brand, digital, and engineering partner for ambitious teams.">
-  <title>Danco Co. — Design and Engineering</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Danco Co. — Tech · Design · Build</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Danco home"><span class="brand-mark">D</span><span>Danco<span class="brand-dot">.</span></span></a>
-    <button class="menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+    <a class="brand" href="#top" aria-label="Danco home">
+      <span class="brand-mark">D</span>
+      <span>Danco<span class="brand-dot">.</span></span>
+    </a>
+    <button class="menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span>
+    </button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-      <a href="#work">Work</a><a href="#services">Capabilities</a><a href="#about">Approach</a><a href="#contact" class="nav-cta">Start a project <span>↗</span></a>
+      <a href="#work">Work</a>
+      <a href="#services">What we build</a>
+      <a href="#team">Team</a>
+      <a href="#about">Story</a>
+      <a href="#contact" class="nav-cta">Start a project <span>↗</span></a>
     </nav>
   </header>
 
   <main id="main">
+    <!-- Hero -->
     <section id="top" class="hero section-shell">
       <div class="hero-copy">
-        <p class="eyebrow"><span></span> Independent studio · Nyahururu, Kenya</p>
-        <h1>Ideas with<br><em>momentum.</em></h1>
-        <p class="hero-intro">Danco is a design and engineering partner for people building the next useful thing.</p>
-        <div class="hero-actions"><a class="button button-dark" href="#contact">Start a conversation <span>→</span></a><a class="text-link" href="#work">Explore selected work <span>↓</span></a></div>
+        <p class="eyebrow"><span></span> Tech company · Nyahururu, Kenya</p>
+        <h1>We build <br /><em>real products.</em></h1>
+        <p class="hero-sub">
+          Danco is a technology company. We design, develop, and ship applications, 
+          websites, and digital experiences that people actually use. 
+          Led by <strong>Lydiah Kevoh</strong> — designer, builder, CEO.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#contact">Start a conversation <span>→</span></a>
+          <a class="text-link" href="#work">See what we build <span>↓</span></a>
+        </div>
       </div>
       <div class="hero-art" aria-hidden="true">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orb orb-large"></div><div class="orb orb-small"></div>
-        <p class="art-label">DESIGN<br>×<br>CODE</p><p class="art-note">01—26</p>
-      </div>
-      <div class="hero-footer"><span>Scroll to explore</span><span class="line"></span><span>Strategy · Design · Build</span></div>
-    </section>
-
-    <section id="work" class="work section-shell">
-      <div class="section-top"><p class="eyebrow"><span></span> Selected work</p><p>01—03</p></div>
-      <h2>Built for clarity.<br>Made to <em>move.</em></h2>
-      <div class="project-list">
-        <article class="project project-sun"><div class="project-visual"><span>FH</span><div class="sun"></div></div><div class="project-meta"><p>Commerce experience</p><h3>FashionHub</h3><p class="project-description">A faster, more editorial shopping journey designed to turn browsing into momentum.</p><a href="#contact" class="project-link">Discuss a project <span>↗</span></a></div></article>
-        <article class="project project-blue"><div class="project-visual"><span>EM</span><div class="panel-lines"></div><div class="dot-grid"></div></div><div class="project-meta"><p>Learning platform</p><h3>EduMentor</h3><p class="project-description">A thoughtful platform helping ambitious students find expert support and direction.</p><a href="#contact" class="project-link">Discuss a project <span>↗</span></a></div></article>
-        <article class="project project-lime"><div class="project-visual"><span>FD</span><svg viewBox="0 0 300 150" aria-hidden="true"><path d="M0 126 C48 110 44 86 89 95 S132 29 171 66 S225 92 300 14" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="171" cy="66" r="6" fill="currentColor"/></svg></div><div class="project-meta"><p>Data product</p><h3>FinDash</h3><p class="project-description">A decisive dashboard that turns a complex live-data picture into actionable signals.</p><a href="#contact" class="project-link">Discuss a project <span>↗</span></a></div></article>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orb orb-large"></div>
+        <div class="orb orb-small"></div>
+        <p class="art-label">DESIGN<br />×<br />CODE</p>
+        <p class="art-note">01—26</p>
       </div>
     </section>
 
+    <!-- Work -->
+    <section id="work" class="section-shell">
+      <div class="section-top">
+        <p class="eyebrow"><span></span> What we've built</p>
+        <p>01—03</p>
+      </div>
+      <h2>Shipped with <em>purpose.</em></h2>
+      <div class="project-grid">
+        <article class="project-card project-sun">
+          <div class="project-visual"><span class="badge">FH</span><span>e‑commerce</span></div>
+          <div class="project-body">
+            <span class="tag">Web application</span>
+            <h3>FashionHub</h3>
+            <p>Full‑stack e‑commerce app for a Kenyan fashion brand. Handled design, development, and deployment.</p>
+            <a href="#contact" class="project-link">Discuss a project <span>↗</span></a>
+          </div>
+        </article>
+        <article class="project-card project-blue">
+          <div class="project-visual"><span class="badge">EM</span><span>EdTech</span></div>
+          <div class="project-body">
+            <span class="tag">Platform</span>
+            <h3>EduMentor</h3>
+            <p>Learning platform connecting Kenyan students with mentors. Built from scratch — app, database, interface.</p>
+            <a href="#contact" class="project-link">Discuss a project <span>↗</span></a>
+          </div>
+        </article>
+        <article class="project-card project-lime">
+          <div class="project-visual"><span class="badge">FD</span><span>Fintech</span></div>
+          <div class="project-body">
+            <span class="tag">Dashboard</span>
+            <h3>FinDash</h3>
+            <p>Financial dashboard for SMEs. Real‑time data, clean visuals, built for decision‑making.</p>
+            <a href="#contact" class="project-link">Discuss a project <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services -->
     <section id="services" class="services section-shell">
-      <div class="section-top"><p class="eyebrow"><span></span> What we do</p><p>02—03</p></div>
-      <div class="services-lead"><h2>From first signal<br>to <em>shipped.</em></h2><p>We combine a small-studio attention to detail with the practical thinking needed to take work live.</p></div>
+      <div class="section-top">
+        <p class="eyebrow"><span></span> What we build</p>
+        <p>02—03</p>
+      </div>
+      <h2>From code <br />to <em>impact.</em></h2>
       <div class="service-grid">
-        <article><span>01</span><h3>Brand systems</h3><p>Positioning, identity, and a visual language people can recognise in a second.</p></article>
-        <article><span>02</span><h3>Digital products</h3><p>Websites and web apps shaped around real jobs, real users, and real business goals.</p></article>
-        <article><span>03</span><h3>Creative engineering</h3><p>Design-forward experiences that feel effortless because the details are doing their work.</p></article>
-        <article><span>04</span><h3>Team enablement</h3><p>Practical workshops, critique, and mentoring that make teams more capable after launch.</p></article>
+        <div class="service-item">
+          <span class="num">01</span>
+          <h3>Web applications</h3>
+          <p>Full‑stack, scalable, user‑focused applications — not just websites.</p>
+        </div>
+        <div class="service-item">
+          <span class="num">02</span>
+          <h3>Websites &amp; landing pages</h3>
+          <p>From complex platforms to crisp landing pages that convert.</p>
+        </div>
+        <div class="service-item">
+          <span class="num">03</span>
+          <h3>UI / UX design</h3>
+          <p>Interfaces people actually enjoy using. Led by Lydiah.</p>
+        </div>
+        <div class="service-item">
+          <span class="num">04</span>
+          <h3>Digital strategy</h3>
+          <p>Because code without direction is just noise. We align tech with goals.</p>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="about section-shell">
-      <p class="eyebrow"><span></span> Our point of view</p>
-      <div class="about-grid"><h2>Good work should feel<br><em>inevitable.</em></h2><div><p class="large-copy">We make the complicated feel clear. Our work connects sharp strategy, expressive design, and considered technology into one confident direction.</p><a class="text-link" href="#contact">Meet the studio <span>→</span></a></div></div>
-      <div class="principles"><p><b>01</b> Make the useful beautiful.</p><p><b>02</b> Sweat the simple details.</p><p><b>03</b> Build for what is next.</p></div>
+    <!-- Team -->
+    <section id="team" class="team section-shell">
+      <div class="section-top">
+        <p class="eyebrow"><span></span> The people</p>
+        <p>03—03</p>
+      </div>
+      <h2>Builders, <em>not</em> bystanders.</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">LK</div>
+          <h4>Lydiah Kevoh</h4>
+          <div class="role">CEO · UI/UX Designer</div>
+          <p class="bio">Designer first, builder second. Leads the vision and makes sure everything looks and feels right.</p>
+          <span class="trait">design · product</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">J</div>
+          <h4>Jacob</h4>
+          <div class="role">Tech nerd / Guru</div>
+          <p class="bio">Lives in the terminal. Makes the backend sing and the frontend dance. If it works, Jacob made it work.</p>
+          <span class="trait">backend · infrastructure</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">F</div>
+          <h4>Frank</h4>
+          <div class="role">Tech nerd / Guru</div>
+          <p class="bio">The other half of the brain. Code reviewer, problem solver, and the one who asks "but why?"</p>
+          <span class="trait">full‑stack · architecture</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">L</div>
+          <h4>Lydiah (Ops)</h4>
+          <div class="role">Operations &amp; Culture</div>
+          <p class="bio">Keeps the company running. The one you can't let go — knows where everything lives.</p>
+          <span class="trait">operations · people</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">J</div>
+          <h4>Joshua</h4>
+          <div class="role">The glue</div>
+          <p class="bio">Does a little bit of everything. Also someone you can't let go — shows up, helps, holds things together.</p>
+          <span class="trait">support · everything</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">M</div>
+          <h4>Mary</h4>
+          <div class="role">Passionate driver</div>
+          <p class="bio">Driven, energetic, makes things happen. If there's a deadline, Mary is pushing for it.</p>
+          <span class="trait">project management · energy</span>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">C</div>
+          <h4>Charles</h4>
+          <div class="role">Another builder</div>
+          <p class="bio">Quiet, reliable, gets things done. Another name you want on your side.</p>
+          <span class="trait">development · reliability</span>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="contact section-shell">
-      <div><p class="eyebrow"><span></span> Start something good</p><h2>Have an idea?<br><em>Let’s make it real.</em></h2></div>
-      <div class="contact-side"><p>Tell us where you are and where you want to go. We’ll come back with the most useful next step.</p><a class="button button-light" href="mailto:njorodancan48@gmail.com?subject=Project%20enquiry%20for%20Danco%20Co.">Email Danco <span>→</span></a><a class="contact-phone" href="https://wa.me/254791040869" target="_blank" rel="noopener">Or WhatsApp +254 791 040 869 <span>↗</span></a></div>
+    <!-- About / Story -->
+    <section id="about" class="about section-shell">
+      <div class="section-top">
+        <p class="eyebrow"><span></span> Our story</p>
+        <p>—</p>
+      </div>
+      <div class="about-grid">
+        <div>
+          <h2>From Nyahururu, <br /><em>with code.</em></h2>
+          <p class="large-copy">
+            Danco started with a simple idea: build technology that matters — right here in Kenya. 
+            Led by <strong>Lydiah Kevoh</strong>, we're a team of designers, developers, and thinkers 
+            who believe in shipping real products.
+          </p>
+        </div>
+        <div>
+          <p class="large-copy" style="margin-top:0;">
+            We're not an agency. We're a tech company. We build applications, websites, and 
+            digital experiences for clients who want something that actually works.
+          </p>
+          <div class="values">
+            <div><span>→</span> Design-led, code-driven</div>
+            <div><span>→</span> Based in Nyahururu, working globally</div>
+            <div><span>→</span> Small team, big care</div>
+          </div>
+          <a class="text-link" href="#contact" style="margin-top:1.5rem;display:inline-block;">Work with us <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div>
+        <p class="eyebrow"><span></span> Start something good</p>
+        <h2>Have an idea?<br /><em>Let's build it.</em></h2>
+      </div>
+      <div class="contact-side">
+        <p>Tell us what you need — an app, a website, a design. We'll come back with the most useful next step.</p>
+        <a class="button-light" href="mailto:njorodancan48@gmail.com?subject=Project%20enquiry%20for%20Danco">Email Danco <span>→</span></a>
+        <a class="contact-phone" href="https://wa.me/254791040869" target="_blank" rel="noopener">WhatsApp +254 791 040 869 <span>↗</span></a>
+      </div>
     </section>
   </main>
-  <footer><a class="brand" href="#top"><span class="brand-mark">D</span><span>Danco<span class="brand-dot">.</span></span></a><p>Design & engineering for momentum.</p><p>© <span id="year"></span> Danco Co.</p></footer>
-  <script src="script.js"></script>
-</body>
-</html>
+
+  <footer>
+    <a class="brand" href="#top"><span class="brand-mark">D</span><span>Danco<span class="brand-dot">.</span></span></a>
+    <p>Nyahururu, Kenya · Building tech that matters</p>
+    <p>© <span id="year"></span> Danco Co.</p>
+  </footer>
