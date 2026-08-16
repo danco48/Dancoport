@@ -1,467 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Danco Co. | Design & Engineering Agency</title>
-
-  <!-- Font Awesome 6 (Free) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
-  <!-- Google Fonts: Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Danco Co. — brand, digital, and engineering partner for ambitious teams.">
+  <title>Danco Co. — Design and Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- ============================================================
-  PRELOADER
-  ============================================================ -->
-  <div class="preloader" id="preloader">
-    <div class="loader"></div>
-  </div>
-
-  <!-- ============================================================
-  NAVIGATION
-  ============================================================ -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <div class="nav-left">
-        <div class="logo-img">
-          <img src="images/logo.png" alt="Danco Co." onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2244%22 height=%2244%22 viewBox=%220 0 44 44%22%3E%3Ccircle cx=%2222%22 cy=%2222%22 r=%2220%22 fill=%22%237c3aed%22/%3E%3Ctext x=%229%22 y=%2230%22 fill=%22white%22 font-size=%2220%22 font-weight=%22700%22%3ED%3C/text%3E%3C/svg%3E'" />
-        </div>
-        <span class="logo-text">Danco</span>
-      </div>
-      <div class="menu-toggle" id="menuToggle">
-        <span></span><span></span><span></span>
-      </div>
-      <ul class="menu" id="menu">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#team" class="nav-link">Team</a></li>
-        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- ============================================================
-  HERO
-  ============================================================ -->
-  <header id="home" class="hero">
-    <div class="hero-content">
-      <div class="hero-badge">✦ Design &amp; Engineering Agency</div>
-      <h1 class="hero-title">
-        Welcome to <span class="gradient-text">Danco Co.</span>
-      </h1>
-      <p class="hero-subtitle">We engineer brands, digital products, and creative solutions.</p>
-      <div class="hero-typed">
-        <h2 class="typed-output">
-          <span id="typing"></span><span class="typed-cursor"></span>
-        </h2>
-      </div>
-      <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary">
-          <span>Get a Quote</span><i class="fa-solid fa-arrow-right"></i>
-        </a>
-        <a href="#projects" class="btn btn-outline">
-          <span>View Work</span><i class="fa-regular fa-eye"></i>
-        </a>
-      </div>
-      <div class="hero-social">
-        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
-      </div>
-    </div>
-
-    <div class="hero-stats">
-      <div class="stat-card">
-        <h3>250+</h3>
-        <p>Projects Completed</p>
-      </div>
-      <div class="stat-card">
-        <h3>100+</h3>
-        <p>Happy Clients</p>
-      </div>
-      <div class="stat-card">
-        <h3>10+</h3>
-        <p>Years Experience</p>
-      </div>
-    </div>
-
-    <div class="hero-scroll">
-      <a href="#about" class="scroll-down">
-        <span>Scroll</span><i class="fa-solid fa-chevron-down"></i>
-      </a>
-    </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Danco home"><span class="brand-mark">D</span><span>Danco<span class="brand-dot">.</span></span></a>
+    <button class="menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a><a href="#services">Capabilities</a><a href="#about">Approach</a><a href="#contact" class="nav-cta">Start a project <span>↗</span></a>
+    </nav>
   </header>
 
-  <!-- ============================================================
-  ABOUT
-  ============================================================ -->
-  <section id="about" class="section about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Who We Are</span>
-        <h2 class="section-title">About <span class="gradient-text">Danco Co.</span></h2>
-        <div class="section-divider"></div>
+  <main id="main">
+    <section id="top" class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Independent studio · Nyahururu, Kenya</p>
+        <h1>Ideas with<br><em>momentum.</em></h1>
+        <p class="hero-intro">Danco is a design and engineering partner for people building the next useful thing.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#contact">Start a conversation <span>→</span></a><a class="text-link" href="#work">Explore selected work <span>↓</span></a></div>
       </div>
-      <div class="about-grid">
-        <div class="about-card">
-          <div class="about-icon"><i class="fa-solid fa-building"></i></div>
-          <h3>Our Vision</h3>
-          <p>To be a leading creative engineering agency, empowering clients with world-class digital solutions.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-icon"><i class="fa-solid fa-flag"></i></div>
-          <h3>Our Mission</h3>
-          <p>Design, engineer, and mentor — combining technology, creativity, and strategy for maximum impact.</p>
-        </div>
-        <div class="about-card">
-          <div class="about-icon"><i class="fa-solid fa-handshake"></i></div>
-          <h3>Our Values</h3>
-          <p>Innovation, transparency, quality, mentorship, and community growth drive everything we do.</p>
-        </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orb orb-large"></div><div class="orb orb-small"></div>
+        <p class="art-label">DESIGN<br>×<br>CODE</p><p class="art-note">01—26</p>
       </div>
-      <div class="about-highlights">
-        <div class="highlight-item"><i class="fa-solid fa-award"></i> <span>Awwwards Nominee 2024</span></div>
-        <div class="highlight-item"><i class="fa-solid fa-globe"></i> <span>Global Clients in 15+ Countries</span></div>
-        <div class="highlight-item"><i class="fa-solid fa-certificate"></i> <span>Google Partner Certified</span></div>
-      </div>
-    </div>
-  </section>
+      <div class="hero-footer"><span>Scroll to explore</span><span class="line"></span><span>Strategy · Design · Build</span></div>
+    </section>
 
-  <!-- ============================================================
-  SERVICES
-  ============================================================ -->
-  <section id="services" class="section services">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">What We Offer</span>
-        <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
-        <div class="section-divider"></div>
+    <section id="work" class="work section-shell">
+      <div class="section-top"><p class="eyebrow"><span></span> Selected work</p><p>01—03</p></div>
+      <h2>Built for clarity.<br>Made to <em>move.</em></h2>
+      <div class="project-list">
+        <article class="project project-sun"><div class="project-visual"><span>FH</span><div class="sun"></div></div><div class="project-meta"><p>Commerce experience</p><h3>FashionHub</h3><p class="project-description">A faster, more editorial shopping journey designed to turn browsing into momentum.</p><a href="#contact" class="project-link">Discuss a project <span>↗</span></a></div></article>
+        <article class="project project-blue"><div class="project-visual"><span>EM</span><div class="panel-lines"></div><div class="dot-grid"></div></div><div class="project-meta"><p>Learning platform</p><h3>EduMentor</h3><p class="project-description">A thoughtful platform helping ambitious students find expert support and direction.</p><a href="#contact" class="project-link">Discuss a project <span>↗</span></a></div></article>
+        <article class="project project-lime"><div class="project-visual"><span>FD</span><svg viewBox="0 0 300 150" aria-hidden="true"><path d="M0 126 C48 110 44 86 89 95 S132 29 171 66 S225 92 300 14" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="171" cy="66" r="6" fill="currentColor"/></svg></div><div class="project-meta"><p>Data product</p><h3>FinDash</h3><p class="project-description">A decisive dashboard that turns a complex live-data picture into actionable signals.</p><a href="#contact" class="project-link">Discuss a project <span>↗</span></a></div></article>
       </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <i class="fa-solid fa-paintbrush"></i>
-          <h3>UI/UX Design</h3>
-          <p>Crafting intuitive and visually stunning interfaces for web and mobile applications.</p>
-          <span class="service-tag">Figma · Prototyping · Usability</span>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-code"></i>
-          <h3>Web &amp; App Development</h3>
-          <p>Custom web applications, Python solutions, and full-stack development tailored to client needs.</p>
-          <span class="service-tag">React · Node · Python · Django</span>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-bullhorn"></i>
-          <h3>Brand Strategy</h3>
-          <p>Strategic branding, identity creation, and marketing consultancy for modern businesses.</p>
-          <span class="service-tag">Identity · Positioning · Storytelling</span>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-chalkboard-user"></i>
-          <h3>Workshops &amp; Mentorship</h3>
-          <p>Guiding teams and individuals in design, development, and creative problem-solving.</p>
-          <span class="service-tag">Training · Code Reviews · Career</span>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-chart-line"></i>
-          <h3>SEO &amp; Analytics</h3>
-          <p>Data-driven growth strategies, search visibility, and performance optimization.</p>
-          <span class="service-tag">SEO · SEM · Conversion</span>
-        </div>
-        <div class="service-card">
-          <i class="fa-solid fa-cloud-arrow-up"></i>
-          <h3>Cloud &amp; DevOps</h3>
-          <p>AWS, CI/CD pipelines, and scalable infrastructure for high-performance applications.</p>
-          <span class="service-tag">AWS · Docker · Kubernetes</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============================================================
-  PROJECTS
-  ============================================================ -->
-  <section id="projects" class="section projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Recent Work</span>
-        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-        <div class="section-divider"></div>
+    <section id="services" class="services section-shell">
+      <div class="section-top"><p class="eyebrow"><span></span> What we do</p><p>02—03</p></div>
+      <div class="services-lead"><h2>From first signal<br>to <em>shipped.</em></h2><p>We combine a small-studio attention to detail with the practical thinking needed to take work live.</p></div>
+      <div class="service-grid">
+        <article><span>01</span><h3>Brand systems</h3><p>Positioning, identity, and a visual language people can recognise in a second.</p></article>
+        <article><span>02</span><h3>Digital products</h3><p>Websites and web apps shaped around real jobs, real users, and real business goals.</p></article>
+        <article><span>03</span><h3>Creative engineering</h3><p>Design-forward experiences that feel effortless because the details are doing their work.</p></article>
+        <article><span>04</span><h3>Team enablement</h3><p>Practical workshops, critique, and mentoring that make teams more capable after launch.</p></article>
       </div>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-img-wrapper">
-            <div class="project-placeholder"><i class="fa-solid fa-cart-shopping"></i></div>
-          </div>
-          <div class="project-info">
-            <h3>FashionHub E‑commerce</h3>
-            <p>Complete UX overhaul with headless commerce solution that boosted conversions by 47%.</p>
-            <div class="project-tech"><span>React</span><span>Node.js</span><span>Stripe</span></div>
-            <a href="#" class="project-link">Case Study →</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-img-wrapper">
-            <div class="project-placeholder"><i class="fa-solid fa-chalkboard-user"></i></div>
-          </div>
-          <div class="project-info">
-            <h3>EduMentor Platform</h3>
-            <p>Interactive mentorship SaaS connecting experts with students; 12,000+ active users.</p>
-            <div class="project-tech"><span>Django</span><span>Tailwind</span><span>PostgreSQL</span></div>
-            <a href="#" class="project-link">Case Study →</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-img-wrapper">
-            <div class="project-placeholder"><i class="fa-solid fa-chart-simple"></i></div>
-          </div>
-          <div class="project-info">
-            <h3>FinDash Analytics</h3>
-            <p>Real-time financial dashboard with custom data visualization and API integration.</p>
-            <div class="project-tech"><span>Vue.js</span><span>D3</span><span>FastAPI</span></div>
-            <a href="#" class="project-link">Case Study →</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-img-wrapper">
-            <div class="project-placeholder"><i class="fa-solid fa-brain"></i></div>
-          </div>
-          <div class="project-info">
-            <h3>AI Brand Assistant</h3>
-            <p>Generative AI tool for brand identity suggestions used by 50+ creative agencies.</p>
-            <div class="project-tech"><span>OpenAI</span><span>Next.js</span><span>MongoDB</span></div>
-            <a href="#" class="project-link">Case Study →</a>
-          </div>
-        </div>
-      </div>
-      <div class="projects-cta">
-        <a href="#" class="btn btn-outline">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============================================================
-  TEAM
-  ============================================================ -->
-  <section id="team" class="section team">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Meet the Crew</span>
-        <h2 class="section-title">Our <span class="gradient-text">Team</span></h2>
-        <div class="section-divider"></div>
-      </div>
-      <div class="team-grid">
-        <div class="team-card">
-          <img src="images/danco.jpg" alt="Danco - Founder" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22110%22 height=%22110%22 viewBox=%220 0 110 110%22%3E%3Ccircle cx=%2255%22 cy=%2255%22 r=%2250%22 fill=%22%237c3aed%22/%3E%3Ctext x=%2232%22 y=%2265%22 fill=%22white%22 font-size=%2236%22 font-weight=%22700%22%3ED%3C/text%3E%3C/svg%3E'" />
-          <h3>Danco</h3>
-          <p>Founder &amp; Lead Designineer</p>
-          <div class="team-social">
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-          </div>
-        </div>
-        <div class="team-card">
-          <img src="images/member2.jpg" alt="Kelvin M" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22110%22 height=%22110%22 viewBox=%220 0 110 110%22%3E%3Ccircle cx=%2255%22 cy=%2255%22 r=%2250%22 fill=%22%233b82f6%22/%3E%3Ctext x=%2230%22 y=%2265%22 fill=%22white%22 font-size=%2232%22 font-weight=%22700%22%3EKM%3C/text%3E%3C/svg%3E'" />
-          <h3>Kelvin M</h3>
-          <p>Senior Full‑Stack Developer</p>
-          <div class="team-social">
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-          </div>
-        </div>
-        <div class="team-card">
-          <img src="images/member3.jpg" alt="Frank N" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22110%22 height=%22110%22 viewBox=%220 0 110 110%22%3E%3Ccircle cx=%2255%22 cy=%2255%22 r=%2250%22 fill=%22%23ec4899%22/%3E%3Ctext x=%2230%22 y=%2265%22 fill=%22white%22 font-size=%2232%22 font-weight=%22700%22%3EFN%3C/text%3E%3C/svg%3E'" />
-          <h3>Frank N</h3>
-          <p>UI/UX Design Lead</p>
-          <div class="team-social">
-            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
-            <a href="#"><i class="fa-brands fa-behance"></i></a>
-          </div>
-        </div>
-        <div class="team-card">
-          <img src="images/member4.jpg" alt="Jacob N" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22110%22 height=%22110%22 viewBox=%220 0 110 110%22%3E%3Ccircle cx=%2255%22 cy=%2255%22 r=%2250%22 fill=%22%23f59e0b%22/%3E%3Ctext x=%2230%22 y=%2265%22 fill=%22white%22 font-size=%2232%22 font-weight=%22700%22%3EJN%3C/text%3E%3C/svg%3E'" />
-          <h3>Jacob N</h3>
-          <p>Creative Strategist &amp; Mentor</p>
-          <div class="team-social">
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section id="about" class="about section-shell">
+      <p class="eyebrow"><span></span> Our point of view</p>
+      <div class="about-grid"><h2>Good work should feel<br><em>inevitable.</em></h2><div><p class="large-copy">We make the complicated feel clear. Our work connects sharp strategy, expressive design, and considered technology into one confident direction.</p><a class="text-link" href="#contact">Meet the studio <span>→</span></a></div></div>
+      <div class="principles"><p><b>01</b> Make the useful beautiful.</p><p><b>02</b> Sweat the simple details.</p><p><b>03</b> Build for what is next.</p></div>
+    </section>
 
-  <!-- ============================================================
-  TESTIMONIALS
-  ============================================================ -->
-  <section id="testimonials" class="section testimonials">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">What Clients Say</span>
-        <h2 class="section-title">Testimonials</h2>
-        <div class="section-divider"></div>
-      </div>
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          <p>"Danco Co. delivered beyond our expectations. Their design system and development speed are unmatched. Highly recommended."</p>
-          <h4>— Kinuthia Mwangi</h4>
-          <span class="client-role">CMO at Vantage</span>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          <p>"Their mentorship program helped our team level up fast. We saw a 2× increase in internal productivity within months."</p>
-          <h4>— Tech Lead</h4>
-          <span class="client-role">StartUpX</span>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          <p>"Creative, reliable, and professional — the full package. They redesigned our brand identity and we gained 35% more engagement."</p>
-          <h4>— Lec Zombie</h4>
-          <span class="client-role">Founder of Lumos</span>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
-          <p>"Danco's DevOps solutions made our cloud infrastructure bulletproof. Great communication and execution throughout."</p>
-          <h4>— Lydiah Njoroge</h4>
-          <span class="client-role">CTO at ScaleFlow</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-  CONTACT
-  ============================================================ -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Let's Talk</span>
-        <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
-        <div class="section-divider"></div>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="info-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <div>
-              <h4>Visit Us</h4>
-              <p> NYAHURURU 20300</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fa-solid fa-envelope"></i>
-            <div>
-              <h4>Email</h4>
-              <p><a href="mailto:njorodancan48@gmail.com">njorodancan48@gmail.com</a></p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fa-solid fa-phone-volume"></i>
-            <div>
-              <h4>Phone / WhatsApp</h4>
-              <p><a href="tel:+254791040869">+254 791 040 869</a></p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="fa-regular fa-clock"></i>
-            <div>
-              <h4>Office Hours</h4>
-              <p>Mon–Fri: 9:00 AM – 7:00 PM (EST)</p>
-            </div>
-          </div>
-          <div class="social-contact">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-          </div>
-        </div>
-        <div class="contact-form">
-          <form id="contactForm" action="#" method="post">
-            <div class="form-group">
-              <input type="text" placeholder="Full Name *" required />
-            </div>
-            <div class="form-group">
-              <input type="email" placeholder="Email Address *" required />
-            </div>
-            <div class="form-group">
-              <input type="tel" placeholder="Phone Number (optional)" />
-            </div>
-            <div class="form-group">
-              <select>
-                <option value="">Interested in…</option>
-                <option value="design">Design &amp; Branding</option>
-                <option value="development">Web / App Development</option>
-                <option value="mentorship">Workshops &amp; Mentorship</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <textarea rows="5" placeholder="Tell us about your project or idea…"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary submit-btn">
-              Send Message <i class="fa-solid fa-paper-plane"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-  FOOTER
-  ============================================================ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">Danco Co.</div>
-        <p class="footer-quote">Empowering brands, teams, and creators.</p>
-        <div class="footer-social">
-          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
-        </div>
-        <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#projects">Projects</a>
-          <a href="#privacy">Privacy Policy</a>
-        </div>
-        <div class="footer-copyright">
-          <p>&copy; 2026 Danco Co. All rights reserved. &mdash; Design &amp; Engineering Studio</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ============================================================
-  FLOATING ELEMENTS
-  ============================================================ -->
-  <a href="https://chat.whatsapp.com/ERm2WVGVZQH2DivPUm6R5l" class="whatsapp-float" target="_blank" title="Join WhatsApp Channel">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
-  <div class="back-to-top" id="backToTop">
-    <i class="fa-solid fa-chevron-up"></i>
-  </div>
-
-  <!-- Main JavaScript -->
+    <section id="contact" class="contact section-shell">
+      <div><p class="eyebrow"><span></span> Start something good</p><h2>Have an idea?<br><em>Let’s make it real.</em></h2></div>
+      <div class="contact-side"><p>Tell us where you are and where you want to go. We’ll come back with the most useful next step.</p><a class="button button-light" href="mailto:njorodancan48@gmail.com?subject=Project%20enquiry%20for%20Danco%20Co.">Email Danco <span>→</span></a><a class="contact-phone" href="https://wa.me/254791040869" target="_blank" rel="noopener">Or WhatsApp +254 791 040 869 <span>↗</span></a></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand-mark">D</span><span>Danco<span class="brand-dot">.</span></span></a><p>Design & engineering for momentum.</p><p>© <span id="year"></span> Danco Co.</p></footer>
   <script src="script.js"></script>
-
 </body>
 </html>
