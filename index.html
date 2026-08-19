@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Danco Co. — Technology, Designed to Move</title>
+    <title>Danco Co. — Technology, Designed to Move.</title>
+
     <meta
         name="description"
-        content="Danco Co. is a technology company building digital products, software, AI systems and modern digital experiences."
+        content="Danco Co. builds digital products, software, AI systems, interfaces and data-driven technology."
     >
+
+    <link rel="icon" type="image/png" href="logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
@@ -22,54 +26,133 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- =========================================
+         3D BACKGROUND
+    ========================================== -->
+
+    <div class="scene" aria-hidden="true">
+
+        <div class="grid-floor"></div>
+
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="glow glow-three"></div>
+
+        <div class="cube cube-one">
+            <div></div><div></div><div></div>
+            <div></div><div></div><div></div>
+        </div>
+
+        <div class="cube cube-two">
+            <div></div><div></div><div></div>
+            <div></div><div></div><div></div>
+        </div>
+
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+
+        <div class="particles">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
 
     <header class="site-header">
-        <a href="#home" class="logo">
-            <span class="logo-mark">D</span>
-            <span>DANCO <small>CO.</small></span>
+
+        <a href="#home" class="brand">
+
+            <div class="brand-logo">
+                <img src="logo.png" alt="Danco Co. logo">
+            </div>
+
+            <div class="brand-text">
+                <strong>DANCO</strong>
+                <span>CO.</span>
+            </div>
+
         </a>
 
+
         <nav class="main-nav" id="mainNav">
+
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#team">Team</a>
             <a href="#projects">Projects</a>
             <a href="#careers">Careers</a>
+
+            <a href="#contact" class="mobile-talk">
+                Let's Talk ↗
+            </a>
+
         </nav>
 
+
         <div class="header-actions">
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+
+            <button
+                class="theme-toggle"
+                id="themeToggle"
+                aria-label="Toggle theme"
+            >
                 ◐
             </button>
 
-            <a href="#contact" class="header-contact">
-                Let's Talk <span>↗</span>
+            <a href="#contact" class="talk-button">
+                Let's Talk
+                <span>↗</span>
             </a>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu"
+            >
                 <span></span>
                 <span></span>
             </button>
+
         </div>
+
     </header>
 
 
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+
     <main>
 
-        <!-- ================= HERO ================= -->
 
-        <section class="hero section" id="home">
+        <!-- =====================================
+             HERO
+        ====================================== -->
 
-            <div class="hero-grid"></div>
+        <section class="hero" id="home">
 
             <div class="hero-content reveal">
 
-                <div class="eyebrow">
+                <div class="status-line">
                     <span class="status-dot"></span>
-                    TECHNOLOGY · DESIGN · ENGINEERING
+
+                    <span>
+                        DANCO CO. / TECHNOLOGY CREW
+                    </span>
+
+                    <span class="status-live">
+                        ONLINE
+                    </span>
                 </div>
+
 
                 <h1>
                     We build
@@ -77,125 +160,201 @@
                     that matter.
                 </h1>
 
+
                 <p class="hero-description">
                     Danco Co. is a technology crew creating software,
-                    digital experiences, AI systems and solutions built
-                    for the real world.
+                    digital experiences, AI systems and data-driven
+                    solutions for the real world.
                 </p>
 
+
                 <div class="hero-buttons">
+
                     <a href="#projects" class="btn btn-primary">
-                        Explore our work <span>↗</span>
+                        Explore our work
+                        <span>↗</span>
                     </a>
 
-                    <a href="#about" class="btn btn-secondary">
+                    <a href="#about" class="btn btn-ghost">
                         Discover Danco Co.
                     </a>
+
+                </div>
+
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>08</strong>
+                        <span>TEAM MEMBERS</span>
+                    </div>
+
+                    <div>
+                        <strong>06+</strong>
+                        <span>TECH DISCIPLINES</span>
+                    </div>
+
+                    <div>
+                        <strong>01</strong>
+                        <span>MISSION</span>
+                    </div>
+
                 </div>
 
             </div>
 
-            <div class="hero-meta">
-                <span>EST. 2026</span>
-                <span>KENYA / GLOBAL</span>
-                <span>01 — 08</span>
+
+            <!-- HERO 3D OBJECT -->
+
+            <div class="hero-object" aria-hidden="true">
+
+                <div class="hero-ring ring-a"></div>
+                <div class="hero-ring ring-b"></div>
+                <div class="hero-ring ring-c"></div>
+
+                <div class="hero-core">
+                    <span>DC</span>
+                </div>
+
+                <div class="orbit-dot dot-a"></div>
+                <div class="orbit-dot dot-b"></div>
+                <div class="orbit-dot dot-c"></div>
+
             </div>
 
-            <div class="hero-orbit">
-                <div class="orbit-ring ring-one"></div>
-                <div class="orbit-ring ring-two"></div>
-                <div class="orbit-core">DC</div>
+
+            <div class="hero-footer">
+
+                <span>EST. 2026</span>
+
+                <span>KENYA / GLOBAL</span>
+
+                <span>SCROLL TO EXPLORE ↓</span>
+
             </div>
 
         </section>
 
 
-        <!-- ================= MARQUEE ================= -->
+        <!-- =====================================
+             MARQUEE
+        ====================================== -->
 
         <div class="marquee">
+
             <div class="marquee-track">
+
                 <span>SOFTWARE</span>
-                <i>✦</i>
+                <b>✦</b>
+
                 <span>UI / UX</span>
-                <i>✦</i>
+                <b>✦</b>
+
                 <span>AI & DATA</span>
-                <i>✦</i>
+                <b>✦</b>
+
                 <span>WEB DEVELOPMENT</span>
-                <i>✦</i>
+                <b>✦</b>
+
                 <span>AUTOMATION</span>
-                <i>✦</i>
+                <b>✦</b>
+
                 <span>SOFTWARE</span>
-                <i>✦</i>
+                <b>✦</b>
+
                 <span>UI / UX</span>
-                <i>✦</i>
+                <b>✦</b>
+
                 <span>AI & DATA</span>
-                <i>✦</i>
+                <b>✦</b>
+
+                <span>WEB DEVELOPMENT</span>
+                <b>✦</b>
+
             </div>
+
         </div>
 
 
-        <!-- ================= ABOUT ================= -->
+        <!-- =====================================
+             ABOUT
+        ====================================== -->
 
         <section class="section about" id="about">
 
             <div class="section-heading reveal">
-                <span class="section-number">01</span>
-                <span class="section-label">ABOUT DANCO CO.</span>
+
+                <span>01</span>
+
+                <div></div>
+
+                <small>ABOUT DANCO CO.</small>
+
             </div>
+
 
             <div class="about-layout">
 
                 <div class="about-title reveal">
+
+                    <span class="eyebrow">
+                        WHO WE ARE
+                    </span>
+
                     <h2>
                         Small crew.
                         <em>Big systems.</em>
                     </h2>
+
                 </div>
 
+
                 <div class="about-copy reveal">
+
                     <p class="large-text">
-                        We are a technology team focused on turning ideas
-                        into useful, scalable digital products.
+                        We turn ideas into useful technology.
                     </p>
 
                     <p>
-                        From interfaces and websites to backend systems,
-                        AI pipelines and data infrastructure, Danco Co.
-                        brings different technical disciplines into one
-                        coordinated team.
+                        Danco Co. brings designers, developers,
+                        data engineers, testers and technical
+                        specialists together to create digital
+                        products that actually solve problems.
                     </p>
 
                     <a href="#services" class="text-link">
-                        What we do <span>→</span>
+                        Explore what we do →
                     </a>
+
                 </div>
 
             </div>
+
 
             <div class="principles">
 
                 <div class="principle reveal">
                     <span>01</span>
                     <h3>Build</h3>
-                    <p>We turn concepts into functioning technology.</p>
+                    <p>Ideas become working technology.</p>
                 </div>
 
                 <div class="principle reveal">
                     <span>02</span>
                     <h3>Design</h3>
-                    <p>We make complex technology feel simple.</p>
+                    <p>Complex systems should feel simple.</p>
                 </div>
 
                 <div class="principle reveal">
                     <span>03</span>
-                    <h3>Improve</h3>
-                    <p>We test, measure and continuously refine.</p>
+                    <h3>Test</h3>
+                    <p>We find the bugs before users do.</p>
                 </div>
 
                 <div class="principle reveal">
                     <span>04</span>
                     <h3>Scale</h3>
-                    <p>We build foundations that can grow.</p>
+                    <p>We build foundations ready for growth.</p>
                 </div>
 
             </div>
@@ -203,98 +362,169 @@
         </section>
 
 
-        <!-- ================= SERVICES ================= -->
+        <!-- =====================================
+             SERVICES
+        ====================================== -->
 
         <section class="section services" id="services">
 
             <div class="section-heading reveal">
-                <span class="section-number">02</span>
-                <span class="section-label">WHAT WE DO</span>
+
+                <span>02</span>
+
+                <div></div>
+
+                <small>WHAT WE DO</small>
+
             </div>
 
-            <div class="services-intro reveal">
+
+            <div class="services-heading reveal">
+
                 <h2>
-                    Technology is a team sport.
+                    Technology is
+                    <em>a team sport.</em>
                 </h2>
 
                 <p>
                     Different people. Different skills.
                     One system.
                 </p>
+
             </div>
+
 
             <div class="services-list">
 
                 <article class="service reveal">
-                    <span class="service-code">01</span>
-                    <div>
-                        <h3>Web Development</h3>
-                        <p>
-                            Modern websites, business platforms,
-                            dashboards and web applications.
-                        </p>
-                    </div>
-                    <span class="service-arrow">↗</span>
-                </article>
 
-                <article class="service reveal">
-                    <span class="service-code">02</span>
+                    <span class="service-number">01</span>
+
                     <div>
+                        <span class="service-tag">
+                            DESIGN
+                        </span>
+
                         <h3>UI / UX Design</h3>
+
                         <p>
-                            Interfaces, prototypes, design systems
-                            and experiences people actually enjoy.
+                            Interfaces, wireframes, prototypes,
+                            design systems and user experiences.
                         </p>
                     </div>
+
                     <span class="service-arrow">↗</span>
+
                 </article>
 
+
                 <article class="service reveal">
-                    <span class="service-code">03</span>
+
+                    <span class="service-number">02</span>
+
                     <div>
+                        <span class="service-tag">
+                            DEVELOPMENT
+                        </span>
+
+                        <h3>Web Development</h3>
+
+                        <p>
+                            Modern websites, web applications,
+                            dashboards and digital platforms.
+                        </p>
+                    </div>
+
+                    <span class="service-arrow">↗</span>
+
+                </article>
+
+
+                <article class="service reveal">
+
+                    <span class="service-number">03</span>
+
+                    <div>
+                        <span class="service-tag">
+                            ENGINEERING
+                        </span>
+
                         <h3>Software Engineering</h3>
+
                         <p>
-                            Full-stack systems, APIs, databases and
-                            application architecture.
+                            Full-stack systems, APIs, databases
+                            and application architecture.
                         </p>
                     </div>
+
                     <span class="service-arrow">↗</span>
+
                 </article>
 
+
                 <article class="service reveal">
-                    <span class="service-code">04</span>
+
+                    <span class="service-number">04</span>
+
                     <div>
+                        <span class="service-tag">
+                            AI / DATA
+                        </span>
+
                         <h3>AI & Data Engineering</h3>
+
                         <p>
                             Data pipelines, automation, analytics,
-                            machine learning and AI-powered systems.
+                            machine learning and AI systems.
                         </p>
                     </div>
+
                     <span class="service-arrow">↗</span>
+
                 </article>
 
+
                 <article class="service reveal">
-                    <span class="service-code">05</span>
+
+                    <span class="service-number">05</span>
+
                     <div>
+                        <span class="service-tag">
+                            QUALITY
+                        </span>
+
                         <h3>QA & Testing</h3>
+
                         <p>
-                            Testing applications, APIs and workflows
-                            before bugs meet the client.
+                            Application, API and workflow testing
+                            designed to catch problems early.
                         </p>
                     </div>
+
                     <span class="service-arrow">↗</span>
+
                 </article>
 
+
                 <article class="service reveal">
-                    <span class="service-code">06</span>
+
+                    <span class="service-number">06</span>
+
                     <div>
-                        <h3>Technical Documentation</h3>
+                        <span class="service-tag">
+                            TECHNICAL
+                        </span>
+
+                        <h3>Documentation</h3>
+
                         <p>
-                            Clear documentation, system guides,
-                            reports and technical content.
+                            Technical reports, system documentation,
+                            guides and structured content.
                         </p>
                     </div>
+
                     <span class="service-arrow">↗</span>
+
                 </article>
 
             </div>
@@ -302,146 +532,254 @@
         </section>
 
 
-        <!-- ================= TEAM ================= -->
+        <!-- =====================================
+             TEAM
+        ====================================== -->
 
         <section class="section team" id="team">
 
             <div class="section-heading reveal">
-                <span class="section-number">03</span>
-                <span class="section-label">THE CREW</span>
+
+                <span>03</span>
+
+                <div></div>
+
+                <small>THE CREW</small>
+
             </div>
 
-            <div class="team-header reveal">
-                <h2>
-                    Meet the people
-                    <em>behind the code.</em>
-                </h2>
+
+            <div class="team-heading reveal">
+
+                <div>
+
+                    <span class="eyebrow">
+                        DANCO CO. / PEOPLE
+                    </span>
+
+                    <h2>
+                        Meet the people
+                        <em>behind the code.</em>
+                    </h2>
+
+                </div>
 
                 <p>
                     Eight people. Multiple disciplines.
                     One Danco Co. system.
                 </p>
+
             </div>
+
 
             <div class="team-grid">
 
+
+                <!-- DANCO -->
+
                 <article class="team-card featured reveal">
+
                     <div class="member-top">
                         <span>DCO-CEO-01</span>
                         <span>01</span>
                     </div>
 
-                    <div class="avatar avatar-danco">D</div>
+                    <div class="member-photo">
+                        <div class="photo-placeholder">D</div>
+                    </div>
 
                     <div class="member-info">
+
                         <h3>Danco</h3>
-                        <p>CEO / Lead Tech Strategist</p>
+
+                        <p>
+                            CEO / Lead Tech Strategist
+                        </p>
+
                     </div>
+
                 </article>
 
 
+                <!-- LYDIAH -->
+
                 <article class="team-card reveal">
+
                     <div class="member-top">
                         <span>DCO-UX-02</span>
                         <span>02</span>
                     </div>
 
-                    <div class="avatar">L</div>
+                    <div class="member-photo">
+                        <div class="photo-placeholder">L</div>
+                    </div>
 
                     <div class="member-info">
+
                         <h3>Lydiah</h3>
-                        <p>UI / UX Designer</p>
+
+                        <p>
+                            UI / UX Designer
+                        </p>
+
                     </div>
+
                 </article>
 
 
+                <!-- KEVOH -->
+
                 <article class="team-card reveal">
+
                     <div class="member-top">
                         <span>DCO-FSD-03</span>
                         <span>03</span>
                     </div>
 
-                    <div class="avatar">K</div>
+                    <div class="member-photo">
+                        <div class="photo-placeholder">K</div>
+                    </div>
 
                     <div class="member-info">
+
                         <h3>Kevoh</h3>
-                        <p>Full-Stack Developer</p>
+
+                        <p>
+                            Full-Stack Developer
+                        </p>
+
                     </div>
+
                 </article>
 
 
+                <!-- JACOB -->
+
                 <article class="team-card reveal">
+
                     <div class="member-top">
                         <span>DCO-FE-04</span>
                         <span>04</span>
                     </div>
 
-                    <div class="avatar">J</div>
+                    <div class="member-photo">
+                        <div class="photo-placeholder">J</div>
+                    </div>
 
                     <div class="member-info">
+
                         <h3>Jacob</h3>
-                        <p>Frontend Developer</p>
+
+                        <p>
+                            Frontend Developer
+                        </p>
+
                     </div>
+
                 </article>
 
 
+                <!-- FRANK -->
+
                 <article class="team-card reveal">
+
                     <div class="member-top">
                         <span>DCO-BE-05</span>
                         <span>05</span>
                     </div>
 
-                    <div class="avatar">F</div>
+                    <div class="member-photo">
+                        <div class="photo-placeholder">F</div>
+                    </div>
 
                     <div class="member-info">
+
                         <h3>Frank</h3>
-                        <p>Backend Developer</p>
+
+                        <p>
+                            Backend Developer
+                        </p>
+
                     </div>
+
                 </article>
 
 
+                <!-- JOSHUA -->
+
                 <article class="team-card reveal">
+
                     <div class="member-top">
                         <span>DCO-AI-06</span>
                         <span>06</span>
                     </div>
 
-                    <div class="avatar">J</div>
+                    <div class="member-photo">
+                        <div class="photo-placeholder">J</div>
+                    </div>
 
                     <div class="member-info">
+
                         <h3>Joshua</h3>
-                        <p>AI & Data Engineer</p>
+
+                        <p>
+                            AI & Data Engineer
+                        </p>
+
                     </div>
+
                 </article>
 
 
+                <!-- MARY -->
+
                 <article class="team-card reveal">
+
                     <div class="member-top">
                         <span>DCO-TCD-07</span>
                         <span>07</span>
                     </div>
 
-                    <div class="avatar">M</div>
+                    <div class="member-photo">
+                        <div class="photo-placeholder">M</div>
+                    </div>
 
                     <div class="member-info">
+
                         <h3>Mary</h3>
-                        <p>Technical Content & Documentation</p>
+
+                        <p>
+                            Technical Content & Documentation
+                        </p>
+
                     </div>
+
                 </article>
 
 
+                <!-- CHARLES -->
+
                 <article class="team-card reveal">
+
                     <div class="member-top">
                         <span>DCO-QA-08</span>
                         <span>08</span>
                     </div>
 
-                    <div class="avatar">C</div>
+                    <div class="member-photo">
+                        <div class="photo-placeholder">C</div>
+                    </div>
 
                     <div class="member-info">
+
                         <h3>Charles</h3>
-                        <p>QA / Software Testing</p>
+
+                        <p>
+                            QA / Software Testing
+                        </p>
+
                     </div>
+
                 </article>
 
             </div>
@@ -449,76 +787,147 @@
         </section>
 
 
-        <!-- ================= PROJECTS ================= -->
+        <!-- =====================================
+             PROJECTS
+        ====================================== -->
 
         <section class="section projects" id="projects">
 
             <div class="section-heading reveal">
-                <span class="section-number">04</span>
-                <span class="section-label">SELECTED WORK</span>
+
+                <span>04</span>
+
+                <div></div>
+
+                <small>SELECTED WORK</small>
+
             </div>
 
-            <div class="projects-header reveal">
+
+            <div class="projects-heading reveal">
+
                 <h2>
                     Things we've
                     <em>built.</em>
                 </h2>
 
                 <div class="project-filters">
-                    <button class="filter active" data-filter="all">All</button>
-                    <button class="filter" data-filter="web">Web</button>
-                    <button class="filter" data-filter="software">Software</button>
-                    <button class="filter" data-filter="ai">AI / Data</button>
+
+                    <button class="filter active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter" data-filter="web">
+                        Web
+                    </button>
+
+                    <button class="filter" data-filter="software">
+                        Software
+                    </button>
+
+                    <button class="filter" data-filter="ai">
+                        AI / Data
+                    </button>
+
                 </div>
+
             </div>
+
 
             <div class="projects-grid">
 
-                <article class="project-card large reveal" data-category="web">
+
+                <article
+                    class="project-card large reveal"
+                    data-category="web"
+                >
+
                     <div class="project-visual visual-one">
+
                         <span>DANCO / 001</span>
-                        <div class="visual-word">WEB</div>
+
+                        <div class="visual-lines"></div>
+
+                        <strong>WEB</strong>
+
                     </div>
 
                     <div class="project-details">
+
                         <div>
                             <span>WEB DEVELOPMENT</span>
                             <h3>Digital Experience</h3>
                         </div>
+
                         <span>↗</span>
+
                     </div>
+
                 </article>
 
 
-                <article class="project-card reveal" data-category="software">
+                <article
+                    class="project-card reveal"
+                    data-category="software"
+                >
+
                     <div class="project-visual visual-two">
+
                         <span>DANCO / 002</span>
-                        <div class="visual-word">SYS</div>
+
+                        <div class="dashboard-shape">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+
+                        <strong>SYS</strong>
+
                     </div>
 
                     <div class="project-details">
+
                         <div>
                             <span>SOFTWARE</span>
                             <h3>Management System</h3>
                         </div>
+
                         <span>↗</span>
+
                     </div>
+
                 </article>
 
 
-                <article class="project-card reveal" data-category="ai">
+                <article
+                    class="project-card reveal"
+                    data-category="ai"
+                >
+
                     <div class="project-visual visual-three">
+
                         <span>DANCO / 003</span>
-                        <div class="visual-word">AI</div>
+
+                        <div class="data-points">
+                            <i></i><i></i><i></i>
+                            <i></i><i></i><i></i>
+                        </div>
+
+                        <strong>AI</strong>
+
                     </div>
 
                     <div class="project-details">
+
                         <div>
                             <span>AI & DATA</span>
                             <h3>Intelligent Data Platform</h3>
                         </div>
+
                         <span>↗</span>
+
                     </div>
+
                 </article>
 
             </div>
@@ -526,23 +935,38 @@
         </section>
 
 
-        <!-- ================= TECH STACK ================= -->
+        <!-- =====================================
+             TECH STACK
+        ====================================== -->
 
         <section class="section stack">
 
             <div class="section-heading reveal">
-                <span class="section-number">05</span>
-                <span class="section-label">OUR TOOLBOX</span>
+
+                <span>05</span>
+
+                <div></div>
+
+                <small>OUR TOOLBOX</small>
+
             </div>
+
 
             <div class="stack-layout">
 
                 <div class="stack-title reveal">
+
+                    <span class="eyebrow">
+                        DANCO CO. / STACK
+                    </span>
+
                     <h2>
                         We speak
                         <em>code.</em>
                     </h2>
+
                 </div>
+
 
                 <div class="stack-list reveal">
 
@@ -601,37 +1025,44 @@
         </section>
 
 
-        <!-- ================= INTERNAL PORTAL ================= -->
+        <!-- =====================================
+             INTERNAL PORTAL
+        ====================================== -->
 
         <section class="section portal">
 
             <div class="section-heading reveal">
-                <span class="section-number">06</span>
-                <span class="section-label">BEYOND THE WEBSITE</span>
+
+                <span>06</span>
+
+                <div></div>
+
+                <small>THE DANCO ECOSYSTEM</small>
+
             </div>
+
 
             <div class="portal-layout">
 
                 <div class="portal-copy reveal">
 
-                    <div class="eyebrow">
+                    <span class="eyebrow">
                         DANCO CO. // INTERNAL
-                    </div>
+                    </span>
 
                     <h2>
-                        The website
-                        is only the
-                        <em>front door.</em>
+                        The website is only
+                        the <em>front door.</em>
                     </h2>
 
                     <p>
-                        Behind it sits an internal ecosystem where the
-                        team manages projects, tasks, documentation,
-                        repositories and clients.
+                        Behind it sits an internal ecosystem for
+                        projects, tasks, documentation, repositories
+                        and client communication.
                     </p>
 
                     <a href="#contact" class="btn btn-primary">
-                        Build with us <span>↗</span>
+                        Build with us ↗
                     </a>
 
                 </div>
@@ -639,38 +1070,52 @@
 
                 <div class="dashboard reveal">
 
-                    <div class="dashboard-bar">
-                        <span>DANCO CO. // INTERNAL</span>
-                        <span>● ONLINE</span>
+                    <div class="dashboard-top">
+
+                        <span>
+                            DANCO CO. // INTERNAL
+                        </span>
+
+                        <span class="online">
+                            ● ONLINE
+                        </span>
+
                     </div>
 
+
                     <div class="dashboard-user">
+
                         <div>
                             <small>WELCOME BACK</small>
                             <h3>DCO-CEO-01</h3>
                         </div>
 
-                        <div class="dashboard-avatar">D</div>
+                        <div class="dashboard-avatar">
+                            D
+                        </div>
+
                     </div>
+
 
                     <div class="dashboard-stats">
 
                         <div>
-                            <span>ACTIVE PROJECTS</span>
+                            <span>PROJECTS</span>
                             <strong>04</strong>
                         </div>
 
                         <div>
-                            <span>PENDING TASKS</span>
+                            <span>TASKS</span>
                             <strong>12</strong>
                         </div>
 
                         <div>
-                            <span>TEAM MEMBERS</span>
+                            <span>CREW</span>
                             <strong>08</strong>
                         </div>
 
                     </div>
+
 
                     <div class="dashboard-menu">
 
@@ -707,16 +1152,17 @@
         </section>
 
 
-        <!-- ================= CAREERS ================= -->
+        <!-- =====================================
+             CAREERS
+        ====================================== -->
 
         <section class="section careers" id="careers">
 
-            <div class="section-heading reveal">
-                <span class="section-number">07</span>
-                <span class="section-label">JOIN THE CREW</span>
-            </div>
-
             <div class="careers-content reveal">
+
+                <span class="eyebrow">
+                    JOIN THE CREW
+                </span>
 
                 <h2>
                     There's always
@@ -725,12 +1171,12 @@
                 </h2>
 
                 <p>
-                    We're interested in people who like creating,
-                    learning and solving difficult problems.
+                    We like people who build, learn,
+                    experiment and solve difficult problems.
                 </p>
 
                 <a href="#contact" class="btn btn-primary">
-                    Start a conversation <span>↗</span>
+                    Start a conversation ↗
                 </a>
 
             </div>
@@ -738,54 +1184,108 @@
         </section>
 
 
-        <!-- ================= CONTACT ================= -->
+        <!-- =====================================
+             CONTACT
+        ====================================== -->
 
         <section class="section contact" id="contact">
 
             <div class="section-heading reveal">
-                <span class="section-number">08</span>
-                <span class="section-label">CONTACT</span>
+
+                <span>07</span>
+
+                <div></div>
+
+                <small>LET'S BUILD</small>
+
             </div>
+
 
             <div class="contact-layout">
 
+
                 <div class="contact-title reveal">
-                    <span class="eyebrow">HAVE AN IDEA?</span>
+
+                    <span class="eyebrow">
+                        HAVE AN IDEA?
+                    </span>
 
                     <h2>
                         Let's make
                         something
                         <em>real.</em>
                     </h2>
+
+                    <div class="contact-direct">
+
+                        <span>DIRECT CONTACT</span>
+
+                        <a href="mailto:njorodancan48@gmail.com">
+                            njorodancan48@gmail.com
+                        </a>
+
+                    </div>
+
                 </div>
 
-                <form class="contact-form reveal" id="contactForm">
+
+                <form
+                    class="contact-form reveal"
+                    id="contactForm"
+                    action="mailto:njorodancan48@gmail.com"
+                    method="post"
+                    enctype="text/plain"
+                >
 
                     <label>
-                        Name
-                        <input type="text" name="name" placeholder="Your name" required>
+                        Your Name
+
+                        <input
+                            type="text"
+                            name="Name"
+                            placeholder="Your name"
+                            required
+                        >
                     </label>
 
-                    <label>
-                        Email
-                        <input type="email" name="email" placeholder="you@example.com" required>
-                    </label>
 
                     <label>
-                        What are we building?
+                        Your Email
+
+                        <input
+                            type="email"
+                            name="Email"
+                            placeholder="you@example.com"
+                            required
+                        >
+                    </label>
+
+
+                    <label>
+                        Project / Message
+
                         <textarea
-                            name="message"
+                            name="Message"
                             rows="5"
-                            placeholder="Tell us about your project..."
+                            placeholder="Tell Danco Co. what you're building..."
                             required
                         ></textarea>
                     </label>
 
-                    <button type="submit" class="btn btn-primary">
-                        Send message <span>↗</span>
+
+                    <button
+                        type="submit"
+                        class="btn btn-light"
+                    >
+                        Send Message
+                        <span>↗</span>
                     </button>
 
-                    <p class="form-message" id="formMessage"></p>
+
+                    <p
+                        class="form-message"
+                        id="formMessage"
+                    ></p>
 
                 </form>
 
@@ -796,48 +1296,162 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- =========================================
+         WHATSAPP FLOATING BUTTON
+    ========================================== -->
+
+    <!-- REPLACE 2547XXXXXXXX WITH YOUR REAL WHATSAPP NUMBER -->
+
+    <a
+        class="whatsapp-float"
+        href="https://wa.me/2547XXXXXXXX?text=Hi%20Danco%20Co.%2C%20I%27d%20like%20to%20discuss%20a%20project."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with Danco Co. on WhatsApp"
+    >
+
+        <span class="whatsapp-pulse"></span>
+
+        <svg
+            viewBox="0 0 32 32"
+            aria-hidden="true"
+        >
+            <path
+                d="M19.11 17.22c-.27-.14-1.61-.79-1.86-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.15-1.34-.79-.7-1.32-1.56-1.48-1.83-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.26 0 1.34.98 2.63 1.11 2.81.14.18 1.93 2.95 4.68 4.14.65.28 1.16.45 1.56.58.66.21 1.26.18 1.73.11.53-.08 1.61-.66 1.84-1.29.23-.63.23-1.17.16-1.29-.07-.11-.25-.18-.52-.32z"
+            />
+            <path
+                d="M16.01 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.26.59 4.47 1.72 6.41L3.2 28.8l6.55-1.71a12.76 12.76 0 0 0 6.26 1.64h.01c7.07 0 12.8-5.73 12.8-12.8S23.08 3.2 16.01 3.2zm0 23.42h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-3.89 1.02 1.04-3.79-.25-.39a10.62 10.62 0 1 1 8.9 4.87z"
+            />
+        </svg>
+
+        <span class="whatsapp-label">
+            Chat with us
+        </span>
+
+    </a>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
 
     <footer class="site-footer">
 
-        <div class="footer-top">
+        <div class="footer-glow"></div>
+
+
+        <div class="footer-main">
 
             <div class="footer-brand">
-                <a href="#home" class="logo">
-                    <span class="logo-mark">D</span>
-                    <span>DANCO <small>CO.</small></span>
+
+                <a href="#home" class="brand">
+
+                    <div class="brand-logo">
+                        <img src="logo.png" alt="Danco Co. logo">
+                    </div>
+
+                    <div class="brand-text">
+                        <strong>DANCO</strong>
+                        <span>CO.</span>
+                    </div>
+
                 </a>
+
 
                 <p>
                     Technology, designed to move.
                 </p>
+
+
+                <div class="footer-socials">
+
+                    <a href="#" aria-label="GitHub">
+                        GH
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        IN
+                    </a>
+
+                    <a
+                        href="mailto:njorodancan48@gmail.com"
+                        aria-label="Email"
+                    >
+                        @
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="footer-links">
 
-                <div>
-                    <span>EXPLORE</span>
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#team">Team</a>
-                    <a href="#projects">Projects</a>
-                </div>
+            <div class="footer-column">
 
-                <div>
-                    <span>CONNECT</span>
-                    <a href="#contact">Contact</a>
-                    <a href="#careers">Careers</a>
-                    <a href="#">GitHub</a>
-                    <a href="#">LinkedIn</a>
-                </div>
+                <span>EXPLORE</span>
+
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#team">Team</a>
+                <a href="#projects">Projects</a>
+                <a href="#careers">Careers</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <span>SERVICES</span>
+
+                <a href="#services">UI / UX</a>
+                <a href="#services">Development</a>
+                <a href="#services">AI & Data</a>
+                <a href="#services">QA & Testing</a>
+                <a href="#services">Documentation</a>
+
+            </div>
+
+
+            <div class="footer-column footer-contact">
+
+                <span>CONTACT</span>
+
+                <a href="mailto:njorodancan48@gmail.com">
+                    njorodancan48@gmail.com
+                </a>
+
+                <!-- Replace this number -->
+                <a href="https://wa.me/2547XXXXXXXX">
+                    WhatsApp →
+                </a>
+
+                <a href="#contact">
+                    Start a project →
+                </a>
 
             </div>
 
         </div>
 
+
+        <div class="footer-big-text">
+            DANCO CO.
+        </div>
+
+
         <div class="footer-bottom">
-            <span>© 2026 Danco Co. All rights reserved.</span>
-            <span>BUILT BY THE DANCO CREW.</span>
+
+            <span>
+                © <span id="currentYear">2026</span> Danco Co.
+            </span>
+
+            <span>
+                BUILT BY THE DANCO CREW.
+            </span>
+
+            <a href="#home">
+                BACK TO TOP ↑
+            </a>
+
         </div>
 
     </footer>
