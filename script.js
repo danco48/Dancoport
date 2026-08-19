@@ -1,10 +1,10 @@
 /* =========================================================
-   DANCO CO. — MAIN JAVASCRIPT
+   DANCO CO. — INTERACTIONS
 ========================================================= */
 
 
 /* =========================================================
-   MOBILE NAVIGATION
+   MOBILE MENU
 ========================================================= */
 
 const menuToggle = document.getElementById("menuToggle");
@@ -13,47 +13,67 @@ const mainNav = document.getElementById("mainNav");
 if (menuToggle && mainNav) {
 
     menuToggle.addEventListener("click", () => {
+
         mainNav.classList.toggle("open");
 
-        const isOpen = mainNav.classList.contains("open");
+        const open =
+            mainNav.classList.contains("open");
 
         menuToggle.setAttribute(
             "aria-label",
-            isOpen ? "Close menu" : "Open menu"
+            open
+                ? "Close menu"
+                : "Open menu"
         );
+
     });
 
-    mainNav.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", () => {
-            mainNav.classList.remove("open");
+
+    mainNav
+        .querySelectorAll("a")
+        .forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                mainNav.classList.remove("open");
+
+            });
+
         });
-    });
+
 }
 
 
 /* =========================================================
-   DARK / LIGHT MODE
+   THEME
 ========================================================= */
 
-const themeToggle = document.getElementById("themeToggle");
+const themeToggle =
+    document.getElementById("themeToggle");
 
-const savedTheme = localStorage.getItem("danco-theme");
+const savedTheme =
+    localStorage.getItem("danco-theme");
 
-if (savedTheme === "dark") {
-    document.body.classList.add("dark");
+if (savedTheme === "light") {
+    document.body.classList.add("light");
 }
 
 if (themeToggle) {
 
     themeToggle.addEventListener("click", () => {
 
-        document.body.classList.toggle("dark");
+        document.body.classList.toggle("light");
 
-        const theme = document.body.classList.contains("dark")
-            ? "dark"
-            : "light";
+        const theme =
+            document.body.classList.contains("light")
+                ? "light"
+                : "dark";
 
-        localStorage.setItem("danco-theme", theme);
+        localStorage.setItem(
+            "danco-theme",
+            theme
+        );
+
     });
 
 }
@@ -63,82 +83,121 @@ if (themeToggle) {
    SCROLL REVEAL
 ========================================================= */
 
-const revealElements = document.querySelectorAll(".reveal");
+const revealElements =
+    document.querySelectorAll(".reveal");
 
-const revealObserver = new IntersectionObserver(
-    entries => {
+const revealObserver =
+    new IntersectionObserver(
+        entries => {
 
-        entries.forEach(entry => {
+            entries.forEach(entry => {
 
-            if (entry.isIntersecting) {
+                if (
+                    entry.isIntersecting
+                ) {
 
-                entry.target.classList.add("visible");
+                    entry.target.classList.add(
+                        "visible"
+                    );
 
-                revealObserver.unobserve(entry.target);
-            }
+                    revealObserver.unobserve(
+                        entry.target
+                    );
 
-        });
+                }
 
-    },
-    {
-        threshold: 0.12
-    }
-);
+            });
+
+        },
+        {
+            threshold: .12
+        }
+    );
+
 
 revealElements.forEach(element => {
+
     revealObserver.observe(element);
+
 });
 
 
 /* =========================================================
-   PROJECT FILTERS
+   PROJECT FILTER
 ========================================================= */
 
-const filters = document.querySelectorAll(".filter");
-const projects = document.querySelectorAll(".project-card");
+const filters =
+    document.querySelectorAll(".filter");
+
+const projects =
+    document.querySelectorAll(".project-card");
+
 
 filters.forEach(filter => {
 
-    filter.addEventListener("click", () => {
+    filter.addEventListener(
+        "click",
+        () => {
 
-        filters.forEach(button => {
-            button.classList.remove("active");
-        });
+            filters.forEach(button => {
 
-        filter.classList.add("active");
+                button.classList.remove(
+                    "active"
+                );
 
-        const category = filter.dataset.filter;
+            });
 
-        projects.forEach(project => {
+            filter.classList.add("active");
 
-            const projectCategory = project.dataset.category;
+            const category =
+                filter.dataset.filter;
 
-            if (
-                category === "all" ||
-                category === projectCategory
-            ) {
 
-                project.style.display = "";
+            projects.forEach(project => {
 
-                setTimeout(() => {
-                    project.style.opacity = "1";
-                    project.style.transform = "translateY(0)";
-                }, 20);
+                const projectCategory =
+                    project.dataset.category;
 
-            } else {
 
-                project.style.opacity = "0";
-                project.style.transform = "translateY(15px)";
+                if (
+                    category === "all" ||
+                    category === projectCategory
+                ) {
 
-                setTimeout(() => {
-                    project.style.display = "none";
-                }, 250);
+                    project.style.display =
+                        "";
 
-            }
+                    requestAnimationFrame(() => {
 
-        });
+                        project.style.opacity =
+                            "1";
 
-    });
+                        project.style.transform =
+                            "translateY(0)";
+
+                    });
+
+                } else {
+
+                    project.style.opacity =
+                        "0";
+
+                    project.style.transform =
+                        "translateY(15px)";
+
+                    setTimeout(() => {
+
+                        project.style.display =
+                            "none";
+
+                    }, 250);
+
+                }
+
+            });
+
+        }
+    );
 
 });
 
@@ -147,122 +206,151 @@ filters.forEach(filter => {
    CONTACT FORM
 ========================================================= */
 
-const contactForm = document.getElementById("contactForm");
-const formMessage = document.getElementById("formMessage");
+const contactForm =
+    document.getElementById("contactForm");
+
+const formMessage =
+    document.getElementById("formMessage");
+
 
 if (contactForm) {
 
-    contactForm.addEventListener("submit", event => {
+    contactForm.addEventListener(
+        "submit",
+        event => {
 
-        event.preventDefault();
+            /*
+             * The form uses mailto:njorodancan48@gmail.com.
+             *
+             * We don't prevent the default submit here.
+             * This allows the user's email application
+             * to open with the message.
+             */
 
-        const name = contactForm
-            .querySelector('[name="name"]')
-            .value
-            .trim();
+            formMessage.textContent =
+                "Opening your email client...";
 
-        if (!name) {
-            formMessage.textContent = "Please enter your name.";
-            return;
         }
-
-        formMessage.textContent =
-            `Thanks, ${name}. Your message is ready to send.`;
-
-        contactForm.reset();
-
-    });
+    );
 
 }
-
-
-/* =========================================================
-   ACTIVE NAVIGATION
-========================================================= */
-
-const sections = document.querySelectorAll("main section[id]");
-const navLinks = document.querySelectorAll(".main-nav a");
-
-const sectionObserver = new IntersectionObserver(
-    entries => {
-
-        entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-
-                navLinks.forEach(link => {
-                    link.classList.remove("active");
-                });
-
-                const activeLink = document.querySelector(
-                    `.main-nav a[href="#${entry.target.id}"]`
-                );
-
-                if (activeLink) {
-                    activeLink.classList.add("active");
-                }
-
-            }
-
-        });
-
-    },
-    {
-        rootMargin: "-35% 0px -55% 0px"
-    }
-);
-
-sections.forEach(section => {
-    sectionObserver.observe(section);
-});
-
-
-/* =========================================================
-   SMOOTH HEADER EFFECT
-========================================================= */
-
-const header = document.querySelector(".site-header");
-
-window.addEventListener(
-    "scroll",
-    () => {
-
-        if (window.scrollY > 40) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
-
-    },
-    {
-        passive: true
-    }
-);
 
 
 /* =========================================================
    CURRENT YEAR
 ========================================================= */
 
-const yearElements = document.querySelectorAll("[data-year]");
+const currentYear =
+    document.getElementById("currentYear");
 
-yearElements.forEach(element => {
-    element.textContent = new Date().getFullYear();
-});
+if (currentYear) {
+
+    currentYear.textContent =
+        new Date().getFullYear();
+
+}
 
 
 /* =========================================================
-   KEYBOARD ACCESSIBILITY
+   PARALLAX 3D BACKGROUND
 ========================================================= */
 
-document.addEventListener("keydown", event => {
+const scene =
+    document.querySelector(".scene");
 
-    if (event.key === "Escape") {
+if (scene) {
 
-        if (mainNav) {
-            mainNav.classList.remove("open");
+    window.addEventListener(
+        "mousemove",
+        event => {
+
+            const x =
+                (event.clientX /
+                    window.innerWidth -
+                    .5) * 2;
+
+            const y =
+                (event.clientY /
+                    window.innerHeight -
+                    .5) * 2;
+
+
+            const cubeOne =
+                document.querySelector(".cube-one");
+
+            const cubeTwo =
+                document.querySelector(".cube-two");
+
+            const orbOne =
+                document.querySelector(".orb-one");
+
+            const orbTwo =
+                document.querySelector(".orb-two");
+
+
+            if (cubeOne) {
+
+                cubeOne.style.marginLeft =
+                    `${x * 12}px`;
+
+                cubeOne.style.marginTop =
+                    `${y * 12}px`;
+
+            }
+
+
+            if (cubeTwo) {
+
+                cubeTwo.style.marginLeft =
+                    `${x * -8}px`;
+
+                cubeTwo.style.marginTop =
+                    `${y * -8}px`;
+
+            }
+
+
+            if (orbOne) {
+
+                orbOne.style.transform =
+                    `translate(${x * 20}px, ${y * 20}px)`;
+
+            }
+
+
+            if (orbTwo) {
+
+                orbTwo.style.transform =
+                    `translate(${x * -15}px, ${y * -15}px)`;
+
+            }
+
+        },
+        {
+            passive: true
+        }
+    );
+
+}
+
+
+/* =========================================================
+   ESCAPE CLOSES MENU
+========================================================= */
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (event.key === "Escape") {
+
+            if (mainNav) {
+                mainNav.classList.remove(
+                    "open"
+                );
+            }
+
         }
 
     }
-
-});
+);
